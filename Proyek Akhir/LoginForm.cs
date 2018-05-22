@@ -46,7 +46,7 @@ namespace Proyek_Akhir {
                 MessageBox.Show("Welcome, " + nama, "Success", MessageBoxButtons.OK);
 
                 Form1.login = true;
-                Form1.nama = nama;
+                //Form1.nama = nama;
 
                 this.Close();
             }
