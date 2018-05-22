@@ -45,7 +45,7 @@ namespace Proyek_Akhir {
                 if( !data_login.IsDBNull(statusIndexNamaBelakang) ) nama += " " + data_login.GetString(statusIndexNamaBelakang);
                 MessageBox.Show("Welcome, " + nama, "Success", MessageBoxButtons.OK);
 
-                Form1.login = true;
+                //Form1.login = true;
                 Form1.nama = nama;
 
                 this.Close();
