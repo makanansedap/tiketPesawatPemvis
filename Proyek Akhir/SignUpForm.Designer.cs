@@ -26,7 +26,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.textBox_kebangsaan = new System.Windows.Forms.TextBox();
             this.dateTimePicker_tanggalLahir = new System.Windows.Forms.DateTimePicker();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -35,9 +35,9 @@
             this.textBox_namaDepan = new System.Windows.Forms.TextBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.label8 = new System.Windows.Forms.Label();
-            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.textBox_telp = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
-            this.textBox7 = new System.Windows.Forms.TextBox();
+            this.textBox_noHP = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.textBox_emailConfirm = new System.Windows.Forms.TextBox();
@@ -69,7 +69,7 @@
             // groupBox1
             // 
             this.groupBox1.Controls.Add(this.label5);
-            this.groupBox1.Controls.Add(this.textBox2);
+            this.groupBox1.Controls.Add(this.textBox_kebangsaan);
             this.groupBox1.Controls.Add(this.dateTimePicker_tanggalLahir);
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.label4);
@@ -92,12 +92,12 @@
             this.label5.TabIndex = 9;
             this.label5.Text = "Kebangsaan";
             // 
-            // textBox2
+            // textBox_kebangsaan
             // 
-            this.textBox2.Location = new System.Drawing.Point(246, 100);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(220, 20);
-            this.textBox2.TabIndex = 8;
+            this.textBox_kebangsaan.Location = new System.Drawing.Point(246, 100);
+            this.textBox_kebangsaan.Name = "textBox_kebangsaan";
+            this.textBox_kebangsaan.Size = new System.Drawing.Size(220, 20);
+            this.textBox_kebangsaan.TabIndex = 8;
             // 
             // dateTimePicker_tanggalLahir
             // 
@@ -150,9 +150,9 @@
             // groupBox2
             // 
             this.groupBox2.Controls.Add(this.label8);
-            this.groupBox2.Controls.Add(this.textBox6);
+            this.groupBox2.Controls.Add(this.textBox_telp);
             this.groupBox2.Controls.Add(this.label9);
-            this.groupBox2.Controls.Add(this.textBox7);
+            this.groupBox2.Controls.Add(this.textBox_noHP);
             this.groupBox2.Controls.Add(this.label6);
             this.groupBox2.Controls.Add(this.label7);
             this.groupBox2.Controls.Add(this.textBox_emailConfirm);
@@ -173,12 +173,12 @@
             this.label8.TabIndex = 13;
             this.label8.Text = "Nomor Telepon Rumah/Kantor";
             // 
-            // textBox6
+            // textBox_telp
             // 
-            this.textBox6.Location = new System.Drawing.Point(246, 97);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(220, 20);
-            this.textBox6.TabIndex = 12;
+            this.textBox_telp.Location = new System.Drawing.Point(246, 97);
+            this.textBox_telp.Name = "textBox_telp";
+            this.textBox_telp.Size = new System.Drawing.Size(220, 20);
+            this.textBox_telp.TabIndex = 12;
             // 
             // label9
             // 
@@ -189,12 +189,12 @@
             this.label9.TabIndex = 11;
             this.label9.Text = "Nomor Telepon HP";
             // 
-            // textBox7
+            // textBox_noHP
             // 
-            this.textBox7.Location = new System.Drawing.Point(6, 97);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(220, 20);
-            this.textBox7.TabIndex = 10;
+            this.textBox_noHP.Location = new System.Drawing.Point(6, 97);
+            this.textBox_noHP.Name = "textBox_noHP";
+            this.textBox_noHP.Size = new System.Drawing.Size(220, 20);
+            this.textBox_noHP.TabIndex = 10;
             // 
             // label6
             // 
@@ -348,14 +348,14 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox textBox_namaDepan;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox textBox_kebangsaan;
         private System.Windows.Forms.DateTimePicker dateTimePicker_tanggalLahir;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.TextBox textBox_telp;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.TextBox textBox7;
+        private System.Windows.Forms.TextBox textBox_noHP;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.TextBox textBox_emailConfirm;

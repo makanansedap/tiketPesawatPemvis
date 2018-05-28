@@ -11,6 +11,20 @@ using MySql.Data.MySqlClient;
 
 namespace Proyek_Akhir {
     public partial class SignUpForm : Form {
+        private string conn;
+        private MySqlConnection connection;
+        MySqlCommand sqlquery;
+
+        private void connect_mysql() {
+            try {
+                conn = "Server = localhost; Database= ta_pemvis; uid = root; pwd=;";
+                connection = new MySqlConnection(conn);
+                connection.Open();
+            }
+            catch (MySqlException e) {
+                throw e;
+            }
+        }
         public SignUpForm() {
             InitializeComponent();
         }
@@ -20,6 +34,8 @@ namespace Proyek_Akhir {
         }
 
         private void button1_Click(object sender, EventArgs e) {
+            connect_mysql();
+
             try {
                 
                 if (textBox_namaDepan.Text == "" || textBox_namaBelakang.Text == "" || textBox_email.Text == "" ||
@@ -35,7 +51,13 @@ namespace Proyek_Akhir {
                         MessageBox.Show("Password tidak boleh kurang dari 8 karakter.", "Notice", MessageBoxButtons.OK);
                     else if (textBox_password.Text != textBox_passwordConfirm.Text)
                         MessageBox.Show("Konfirmasi password tidak sesuai.", "Notice", MessageBoxButtons.OK);
-                    else MessageBox.Show("Apakah informasi yang anda input sudah benar?", "Confirmation", MessageBoxButtons.YesNo);
+                    else {
+                        MessageBox.Show("Apakah informasi yang anda input sudah benar?", "Confirmation", MessageBoxButtons.YesNo);
+
+                        sqlquery = connection.CreateCommand();
+                        sqlquery.CommandText = "INSERT INTO user_table(username, password, nama_depan, nama_belakang, email, no_hp, no_rumah, tanggal_lahir, kebangsaan) VALUES ('" + textBox_username.Text + "', '" + textBox_passwordConfirm.Text + "', '" + textBox_namaDepan.Text + "', '" + textBox_namaBelakang.Text + "', '" + textBox_emailConfirm.Text + "', '" + textBox_noHP.Text + "', '" + textBox_telp.Text + "', '" + dateTimePicker_tanggalLahir.Value.ToString("yyyy-MM-dd") + "', '" + textBox_kebangsaan.Text + "')";
+                        sqlquery.ExecuteNonQuery();
+                    }
                 }
             }
             catch (FormatException ex) {
