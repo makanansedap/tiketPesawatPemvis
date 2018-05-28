@@ -12,8 +12,28 @@ using MySql.Data.MySqlClient;
 namespace Proyek_Akhir {
     public partial class BuyTicket : Form {
         int totalPenumpang = 1;
+        private string conn;
+        private MySqlConnection connection;
+        MySqlDataReader reader;
+        MySqlCommand da;
+
+        private void connect_mysql() {
+            try {
+                conn = "Server = localhost; Database= ta_pemvis; uid = root; pwd=;";
+                String query = "SELECT city, airport_name, IATA FROM airport_table";
+                connection = new MySqlConnection(conn);                
+                da = new MySqlCommand(query, connection);
+                connection.Open();
+
+            }
+            catch (MySqlException e) {
+                throw e;
+            }
+        }
         public BuyTicket() {
             InitializeComponent();
+
+            connect_mysql();
 
             Color color1 = textBox_dewasa.BackColor;
             textBox_dewasa.BackColor = System.Drawing.Color.FromArgb(color1.A, color1.R, color1.G, color1.B);
@@ -38,6 +58,26 @@ namespace Proyek_Akhir {
 
             label_tanggal_pulang.Visible = false;
             dateTimePicker_pulang.Visible = false;
+
+            comboBox_dari.Items.Clear();
+            comboBox_ke.Items.Clear();
+            reader = da.ExecuteReader();
+            while (reader.Read()) {
+                string city = reader.GetString("city");
+                string airport_name = reader.GetString("airport_name");
+                string IATA = reader.GetString("IATA");
+                comboBox_dari.Items.Add(String.Format("{0} ({1}), {2}", city, IATA, airport_name));
+                comboBox_ke.Items.Add(String.Format("{0} ({1}), {2}", city, IATA, airport_name));
+            }
+            reader.Close();
+            
+            comboBox_dari.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDown;
+            comboBox_dari.AutoCompleteMode = AutoCompleteMode.SuggestAppend;
+            comboBox_dari.AutoCompleteSource = AutoCompleteSource.ListItems;
+
+            comboBox_ke.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDown;
+            comboBox_ke.AutoCompleteMode = AutoCompleteMode.SuggestAppend;
+            comboBox_ke.AutoCompleteSource = AutoCompleteSource.ListItems;
         }
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e) {
@@ -130,6 +170,35 @@ namespace Proyek_Akhir {
 
         private void dateTimePicker_pergi_ValueChanged(object sender, EventArgs e) {
             dateTimePicker_pulang.MinDate = dateTimePicker_pergi.Value;
+        }
+
+        private void comboBox_dari_SelectedIndexChanged(object sender, EventArgs e) {
+            comboBox_ke.Items.Clear();
+            reader = da.ExecuteReader();
+            while (reader.Read()) {
+                string city = reader.GetString("city");
+                string airport_name = reader.GetString("airport_name");
+                string IATA = reader.GetString("IATA");
+                comboBox_ke.Items.Add(String.Format("{0} ({1}), {2}", city, IATA, airport_name));
+            }
+            reader.Close();
+            String selected = comboBox_dari.GetItemText(comboBox_dari.SelectedItem);
+            comboBox_ke.Items.Remove(selected);
+
+        }
+
+        private void comboBox_ke_SelectedIndexChanged(object sender, EventArgs e) {
+            comboBox_dari.Items.Clear();
+            reader = da.ExecuteReader();
+            while (reader.Read()) {
+                string city = reader.GetString("city");
+                string airport_name = reader.GetString("airport_name");
+                string IATA = reader.GetString("IATA");
+                comboBox_dari.Items.Add(String.Format("{0} ({1}), {2}", city, IATA, airport_name));
+            }
+            reader.Close();
+            String selected = comboBox_ke.GetItemText(comboBox_dari.SelectedItem);
+            comboBox_dari.Items.Remove(selected);
         }
     }
 }

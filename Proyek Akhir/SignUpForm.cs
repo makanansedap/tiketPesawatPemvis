@@ -57,6 +57,8 @@ namespace Proyek_Akhir {
                         sqlquery = connection.CreateCommand();
                         sqlquery.CommandText = "INSERT INTO user_table(username, password, nama_depan, nama_belakang, email, no_hp, no_rumah, tanggal_lahir, kebangsaan) VALUES ('" + textBox_username.Text + "', '" + textBox_passwordConfirm.Text + "', '" + textBox_namaDepan.Text + "', '" + textBox_namaBelakang.Text + "', '" + textBox_emailConfirm.Text + "', '" + textBox_noHP.Text + "', '" + textBox_telp.Text + "', '" + dateTimePicker_tanggalLahir.Value.ToString("yyyy-MM-dd") + "', '" + textBox_kebangsaan.Text + "')";
                         sqlquery.ExecuteNonQuery();
+                        MessageBox.Show("Sign Up sukses, silahkan login.", "Notice", MessageBoxButtons.OK);
+                        this.Close();
                     }
                 }
             }

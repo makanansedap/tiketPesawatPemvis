@@ -79,7 +79,7 @@
             // 
             // button_belitiket
             // 
-            this.button_belitiket.Location = new System.Drawing.Point(112, 148);
+            this.button_belitiket.Location = new System.Drawing.Point(193, 148);
             this.button_belitiket.Name = "button_belitiket";
             this.button_belitiket.Size = new System.Drawing.Size(75, 23);
             this.button_belitiket.TabIndex = 2;
@@ -100,7 +100,7 @@
             // 
             // button_login
             // 
-            this.button_login.Location = new System.Drawing.Point(112, 148);
+            this.button_login.Location = new System.Drawing.Point(193, 148);
             this.button_login.Name = "button_login";
             this.button_login.Size = new System.Drawing.Size(75, 23);
             this.button_login.TabIndex = 4;
@@ -110,7 +110,7 @@
             // 
             // button_signup
             // 
-            this.button_signup.Location = new System.Drawing.Point(193, 148);
+            this.button_signup.Location = new System.Drawing.Point(112, 148);
             this.button_signup.Name = "button_signup";
             this.button_signup.Size = new System.Drawing.Size(75, 23);
             this.button_signup.TabIndex = 5;
@@ -120,7 +120,7 @@
             // 
             // button_logout
             // 
-            this.button_logout.Location = new System.Drawing.Point(193, 148);
+            this.button_logout.Location = new System.Drawing.Point(112, 148);
             this.button_logout.Name = "button_logout";
             this.button_logout.Size = new System.Drawing.Size(75, 23);
             this.button_logout.TabIndex = 6;

@@ -149,6 +149,7 @@
             this.comboBox_ke.Name = "comboBox_ke";
             this.comboBox_ke.Size = new System.Drawing.Size(206, 21);
             this.comboBox_ke.TabIndex = 6;
+            this.comboBox_ke.SelectedIndexChanged += new System.EventHandler(this.comboBox_ke_SelectedIndexChanged);
             // 
             // label3
             // 
@@ -175,6 +176,7 @@
             this.comboBox_dari.Name = "comboBox_dari";
             this.comboBox_dari.Size = new System.Drawing.Size(206, 21);
             this.comboBox_dari.TabIndex = 3;
+            this.comboBox_dari.SelectedIndexChanged += new System.EventHandler(this.comboBox_dari_SelectedIndexChanged);
             // 
             // label1
             // 
