@@ -185,6 +185,7 @@ namespace Proyek_Akhir {
             String selected = comboBox_dari.GetItemText(comboBox_dari.SelectedItem);
             comboBox_ke.Items.Remove(selected);
 
+            PrintTiket.dari = comboBox_dari.GetItemText(comboBox_dari.SelectedItem);
         }
 
         private void comboBox_ke_SelectedIndexChanged(object sender, EventArgs e) {
@@ -199,6 +200,19 @@ namespace Proyek_Akhir {
             reader.Close();
             String selected = comboBox_ke.GetItemText(comboBox_dari.SelectedItem);
             comboBox_dari.Items.Remove(selected);
+
+            PrintTiket.ke = comboBox_ke.GetItemText(comboBox_ke.SelectedItem);
+        }
+
+        private void button1_Click(object sender, EventArgs e) {
+            
+            
+
+            ListFlight listflight = new ListFlight();
+            listflight.StartPosition = FormStartPosition.Manual;
+            listflight.Location = new Point(this.Location.X, this.Location.Y);
+            this.Close();
+            listflight.ShowDialog();
         }
     }
 }
