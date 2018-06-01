@@ -12,6 +12,7 @@ namespace Proyek_Akhir
 {
     public partial class PrintTiket : Form
     {
+        public static string booking_code = "";
         public static string nama_depan = "";
         public static string nama_belakang = "";
         public static string dari = "";
@@ -39,7 +40,7 @@ namespace Proyek_Akhir
             string temp_dari = substring(dari);
             string temp_ke = substring(ke);
 
-            label_code.Text = "TK";
+            label_code.Text = booking_code;
 
             if(one_way == true)
             {

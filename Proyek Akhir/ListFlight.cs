@@ -137,6 +137,9 @@ namespace Proyek_Akhir
                 PrintTiket.dest_time = comboBox_dest_time.GetItemText(comboBox_dest_time.SelectedItem);
                 PrintTiket.return_time = comboBox_return_time.GetItemText(comboBox_return_time.SelectedItem);
 
+                NamaPenumpang.dest_time = comboBox_dest_time.GetItemText(comboBox_dest_time.SelectedItem);
+                NamaPenumpang.return_time = comboBox_return_time.GetItemText(comboBox_return_time.SelectedItem);
+
                 NamaPenumpang namapenumpang = new NamaPenumpang();
                 namapenumpang.StartPosition = FormStartPosition.Manual;
                 namapenumpang.Location = new Point(this.Location.X, this.Location.Y);

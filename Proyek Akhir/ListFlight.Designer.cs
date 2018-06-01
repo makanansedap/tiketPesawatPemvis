@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.dataGridView_Flight = new System.Windows.Forms.DataGridView();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.groupBox_destination = new System.Windows.Forms.GroupBox();
@@ -39,19 +38,9 @@
             this.label_return = new System.Windows.Forms.Label();
             this.button_next = new System.Windows.Forms.Button();
             this.button_cancel = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView_Flight)).BeginInit();
             this.groupBox_destination.SuspendLayout();
             this.groupBox_return.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // dataGridView_Flight
-            // 
-            this.dataGridView_Flight.BackgroundColor = System.Drawing.SystemColors.ActiveBorder;
-            this.dataGridView_Flight.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView_Flight.Location = new System.Drawing.Point(12, 455);
-            this.dataGridView_Flight.Name = "dataGridView_Flight";
-            this.dataGridView_Flight.Size = new System.Drawing.Size(492, 210);
-            this.dataGridView_Flight.TabIndex = 0;
             // 
             // label1
             // 
@@ -68,7 +57,7 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.label2.Location = new System.Drawing.Point(105, 95);
+            this.label2.Location = new System.Drawing.Point(24, 294);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(278, 13);
             this.label2.TabIndex = 4;
@@ -78,7 +67,7 @@
             // 
             this.groupBox_destination.Controls.Add(this.comboBox_dest_time);
             this.groupBox_destination.Controls.Add(this.label_destination);
-            this.groupBox_destination.Location = new System.Drawing.Point(27, 111);
+            this.groupBox_destination.Location = new System.Drawing.Point(27, 76);
             this.groupBox_destination.Name = "groupBox_destination";
             this.groupBox_destination.Size = new System.Drawing.Size(356, 103);
             this.groupBox_destination.TabIndex = 5;
@@ -107,7 +96,7 @@
             // 
             this.groupBox_return.Controls.Add(this.comboBox_return_time);
             this.groupBox_return.Controls.Add(this.label_return);
-            this.groupBox_return.Location = new System.Drawing.Point(27, 232);
+            this.groupBox_return.Location = new System.Drawing.Point(27, 185);
             this.groupBox_return.Name = "groupBox_return";
             this.groupBox_return.Size = new System.Drawing.Size(356, 106);
             this.groupBox_return.TabIndex = 6;
@@ -134,7 +123,7 @@
             // 
             // button_next
             // 
-            this.button_next.Location = new System.Drawing.Point(283, 370);
+            this.button_next.Location = new System.Drawing.Point(283, 338);
             this.button_next.Name = "button_next";
             this.button_next.Size = new System.Drawing.Size(100, 23);
             this.button_next.TabIndex = 7;
@@ -144,7 +133,7 @@
             // 
             // button_cancel
             // 
-            this.button_cancel.Location = new System.Drawing.Point(148, 370);
+            this.button_cancel.Location = new System.Drawing.Point(148, 338);
             this.button_cancel.Name = "button_cancel";
             this.button_cancel.Size = new System.Drawing.Size(100, 23);
             this.button_cancel.TabIndex = 8;
@@ -156,17 +145,15 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(414, 494);
+            this.ClientSize = new System.Drawing.Size(414, 383);
             this.Controls.Add(this.button_cancel);
             this.Controls.Add(this.button_next);
             this.Controls.Add(this.groupBox_return);
             this.Controls.Add(this.groupBox_destination);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.dataGridView_Flight);
             this.Name = "ListFlight";
             this.Text = "ListFlight";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView_Flight)).EndInit();
             this.groupBox_destination.ResumeLayout(false);
             this.groupBox_destination.PerformLayout();
             this.groupBox_return.ResumeLayout(false);
@@ -177,8 +164,6 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.DataGridView dataGridView_Flight;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.GroupBox groupBox_destination;
