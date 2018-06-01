@@ -48,19 +48,19 @@ namespace Proyek_Akhir {
         }
 
         private void button_login_Click(object sender, EventArgs e) {
-            //button_belitiket.Visible = false;
-            //LoginForm loginForm = new LoginForm();
-            //loginForm.StartPosition = FormStartPosition.Manual;
-            //loginForm.Location = new Point(this.Location.X, this.Location.Y);
-            //loginForm.ShowDialog();
-            //label_welcome.Text = "You are logged in as " + nama;
-            //setLogin(login);
-            BuyTicket beliTiket = new BuyTicket();
+            button_belitiket.Visible = false;
+            LoginForm loginForm = new LoginForm();
+            loginForm.StartPosition = FormStartPosition.Manual;
+            loginForm.Location = new Point(this.Location.X, this.Location.Y);
+            loginForm.ShowDialog();
+            label_welcome.Text = "You are logged in as " + nama;
+            setLogin(login);
+            /*BuyTicket beliTiket = new BuyTicket();
             beliTiket.StartPosition = FormStartPosition.Manual;
             beliTiket.Location = new Point(this.Location.X, this.Location.Y);
             this.Visible = false;
             beliTiket.ShowDialog();
-            this.Visible = true;
+            this.Visible = true;*/
         }
 
         private void button_logout_Click(object sender, EventArgs e) {
