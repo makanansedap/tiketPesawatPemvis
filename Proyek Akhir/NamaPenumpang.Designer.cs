@@ -38,42 +38,42 @@
             this.label5 = new System.Windows.Forms.Label();
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.groupBox_1 = new System.Windows.Forms.GroupBox();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.groupBox_2 = new System.Windows.Forms.GroupBox();
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.textBox_namabelakang_2 = new System.Windows.Forms.TextBox();
             this.textBox_namadepan_2 = new System.Windows.Forms.TextBox();
             this.comboBox_titel_2 = new System.Windows.Forms.ComboBox();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.groupBox_3 = new System.Windows.Forms.GroupBox();
             this.textBox7 = new System.Windows.Forms.TextBox();
             this.textBox_namabelakang_3 = new System.Windows.Forms.TextBox();
             this.textBox_namadepan_3 = new System.Windows.Forms.TextBox();
             this.comboBox_titel_3 = new System.Windows.Forms.ComboBox();
-            this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.groupBox_4 = new System.Windows.Forms.GroupBox();
             this.textBox10 = new System.Windows.Forms.TextBox();
             this.textBox_namabelakang_4 = new System.Windows.Forms.TextBox();
             this.textBox_namadepan_4 = new System.Windows.Forms.TextBox();
             this.comboBox_titel_4 = new System.Windows.Forms.ComboBox();
-            this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.groupBox_5 = new System.Windows.Forms.GroupBox();
             this.textBox13 = new System.Windows.Forms.TextBox();
             this.textBox_namabelakang_5 = new System.Windows.Forms.TextBox();
             this.textBox_namadepan_5 = new System.Windows.Forms.TextBox();
             this.comboBox_titel_5 = new System.Windows.Forms.ComboBox();
-            this.groupBox5 = new System.Windows.Forms.GroupBox();
+            this.groupBox_6 = new System.Windows.Forms.GroupBox();
             this.textBox16 = new System.Windows.Forms.TextBox();
             this.textBox_namabelakang_6 = new System.Windows.Forms.TextBox();
             this.textBox_namadepan_6 = new System.Windows.Forms.TextBox();
             this.comboBox_titel_6 = new System.Windows.Forms.ComboBox();
-            this.groupBox6 = new System.Windows.Forms.GroupBox();
+            this.groupBox_7 = new System.Windows.Forms.GroupBox();
             this.textBox19 = new System.Windows.Forms.TextBox();
             this.textBox_namabelakang_7 = new System.Windows.Forms.TextBox();
             this.textBox_namadepan_7 = new System.Windows.Forms.TextBox();
             this.comboBox_titel_7 = new System.Windows.Forms.ComboBox();
-            this.groupBox7 = new System.Windows.Forms.GroupBox();
+            this.groupBox_8 = new System.Windows.Forms.GroupBox();
             this.textBox22 = new System.Windows.Forms.TextBox();
             this.textBox_namabelakang_8 = new System.Windows.Forms.TextBox();
             this.textBox_namadepan_8 = new System.Windows.Forms.TextBox();
             this.comboBox_titel_8 = new System.Windows.Forms.ComboBox();
-            this.groupBox8 = new System.Windows.Forms.GroupBox();
+            this.groupBox_9 = new System.Windows.Forms.GroupBox();
             this.textBox25 = new System.Windows.Forms.TextBox();
             this.textBox_namabelakang_9 = new System.Windows.Forms.TextBox();
             this.textBox_namadepan_9 = new System.Windows.Forms.TextBox();
@@ -81,14 +81,14 @@
             this.button_next = new System.Windows.Forms.Button();
             this.button_cancel = new System.Windows.Forms.Button();
             this.groupBox_1.SuspendLayout();
-            this.groupBox1.SuspendLayout();
-            this.groupBox2.SuspendLayout();
-            this.groupBox3.SuspendLayout();
-            this.groupBox4.SuspendLayout();
-            this.groupBox5.SuspendLayout();
-            this.groupBox6.SuspendLayout();
-            this.groupBox7.SuspendLayout();
-            this.groupBox8.SuspendLayout();
+            this.groupBox_2.SuspendLayout();
+            this.groupBox_3.SuspendLayout();
+            this.groupBox_4.SuspendLayout();
+            this.groupBox_5.SuspendLayout();
+            this.groupBox_6.SuspendLayout();
+            this.groupBox_7.SuspendLayout();
+            this.groupBox_8.SuspendLayout();
+            this.groupBox_9.SuspendLayout();
             this.SuspendLayout();
             // 
             // label1
@@ -103,6 +103,8 @@
             // 
             // comboBox_titel_1
             // 
+            this.comboBox_titel_1.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
+            this.comboBox_titel_1.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
             this.comboBox_titel_1.FormattingEnabled = true;
             this.comboBox_titel_1.Items.AddRange(new object[] {
             "Mr.",
@@ -180,23 +182,25 @@
             this.groupBox_1.Controls.Add(this.textBox_namabelakang_1);
             this.groupBox_1.Controls.Add(this.textBox_namadepan_1);
             this.groupBox_1.Controls.Add(this.comboBox_titel_1);
+            this.groupBox_1.Enabled = false;
             this.groupBox_1.Location = new System.Drawing.Point(13, 93);
             this.groupBox_1.Name = "groupBox_1";
             this.groupBox_1.Size = new System.Drawing.Size(475, 43);
             this.groupBox_1.TabIndex = 16;
             this.groupBox_1.TabStop = false;
             // 
-            // groupBox1
+            // groupBox_2
             // 
-            this.groupBox1.Controls.Add(this.textBox4);
-            this.groupBox1.Controls.Add(this.textBox_namabelakang_2);
-            this.groupBox1.Controls.Add(this.textBox_namadepan_2);
-            this.groupBox1.Controls.Add(this.comboBox_titel_2);
-            this.groupBox1.Location = new System.Drawing.Point(13, 136);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(475, 43);
-            this.groupBox1.TabIndex = 17;
-            this.groupBox1.TabStop = false;
+            this.groupBox_2.Controls.Add(this.textBox4);
+            this.groupBox_2.Controls.Add(this.textBox_namabelakang_2);
+            this.groupBox_2.Controls.Add(this.textBox_namadepan_2);
+            this.groupBox_2.Controls.Add(this.comboBox_titel_2);
+            this.groupBox_2.Enabled = false;
+            this.groupBox_2.Location = new System.Drawing.Point(13, 136);
+            this.groupBox_2.Name = "groupBox_2";
+            this.groupBox_2.Size = new System.Drawing.Size(475, 43);
+            this.groupBox_2.TabIndex = 17;
+            this.groupBox_2.TabStop = false;
             // 
             // textBox4
             // 
@@ -225,6 +229,8 @@
             // 
             // comboBox_titel_2
             // 
+            this.comboBox_titel_2.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
+            this.comboBox_titel_2.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
             this.comboBox_titel_2.FormattingEnabled = true;
             this.comboBox_titel_2.Items.AddRange(new object[] {
             "Mr.",
@@ -235,17 +241,18 @@
             this.comboBox_titel_2.Size = new System.Drawing.Size(48, 21);
             this.comboBox_titel_2.TabIndex = 4;
             // 
-            // groupBox2
+            // groupBox_3
             // 
-            this.groupBox2.Controls.Add(this.textBox7);
-            this.groupBox2.Controls.Add(this.textBox_namabelakang_3);
-            this.groupBox2.Controls.Add(this.textBox_namadepan_3);
-            this.groupBox2.Controls.Add(this.comboBox_titel_3);
-            this.groupBox2.Location = new System.Drawing.Point(13, 179);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(475, 43);
-            this.groupBox2.TabIndex = 18;
-            this.groupBox2.TabStop = false;
+            this.groupBox_3.Controls.Add(this.textBox7);
+            this.groupBox_3.Controls.Add(this.textBox_namabelakang_3);
+            this.groupBox_3.Controls.Add(this.textBox_namadepan_3);
+            this.groupBox_3.Controls.Add(this.comboBox_titel_3);
+            this.groupBox_3.Enabled = false;
+            this.groupBox_3.Location = new System.Drawing.Point(13, 179);
+            this.groupBox_3.Name = "groupBox_3";
+            this.groupBox_3.Size = new System.Drawing.Size(475, 43);
+            this.groupBox_3.TabIndex = 18;
+            this.groupBox_3.TabStop = false;
             // 
             // textBox7
             // 
@@ -274,6 +281,8 @@
             // 
             // comboBox_titel_3
             // 
+            this.comboBox_titel_3.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
+            this.comboBox_titel_3.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
             this.comboBox_titel_3.FormattingEnabled = true;
             this.comboBox_titel_3.Items.AddRange(new object[] {
             "Mr.",
@@ -284,17 +293,18 @@
             this.comboBox_titel_3.Size = new System.Drawing.Size(48, 21);
             this.comboBox_titel_3.TabIndex = 4;
             // 
-            // groupBox3
+            // groupBox_4
             // 
-            this.groupBox3.Controls.Add(this.textBox10);
-            this.groupBox3.Controls.Add(this.textBox_namabelakang_4);
-            this.groupBox3.Controls.Add(this.textBox_namadepan_4);
-            this.groupBox3.Controls.Add(this.comboBox_titel_4);
-            this.groupBox3.Location = new System.Drawing.Point(13, 222);
-            this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(475, 43);
-            this.groupBox3.TabIndex = 19;
-            this.groupBox3.TabStop = false;
+            this.groupBox_4.Controls.Add(this.textBox10);
+            this.groupBox_4.Controls.Add(this.textBox_namabelakang_4);
+            this.groupBox_4.Controls.Add(this.textBox_namadepan_4);
+            this.groupBox_4.Controls.Add(this.comboBox_titel_4);
+            this.groupBox_4.Enabled = false;
+            this.groupBox_4.Location = new System.Drawing.Point(13, 222);
+            this.groupBox_4.Name = "groupBox_4";
+            this.groupBox_4.Size = new System.Drawing.Size(475, 43);
+            this.groupBox_4.TabIndex = 19;
+            this.groupBox_4.TabStop = false;
             // 
             // textBox10
             // 
@@ -323,6 +333,8 @@
             // 
             // comboBox_titel_4
             // 
+            this.comboBox_titel_4.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
+            this.comboBox_titel_4.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
             this.comboBox_titel_4.FormattingEnabled = true;
             this.comboBox_titel_4.Items.AddRange(new object[] {
             "Mr.",
@@ -333,17 +345,18 @@
             this.comboBox_titel_4.Size = new System.Drawing.Size(48, 21);
             this.comboBox_titel_4.TabIndex = 4;
             // 
-            // groupBox4
+            // groupBox_5
             // 
-            this.groupBox4.Controls.Add(this.textBox13);
-            this.groupBox4.Controls.Add(this.textBox_namabelakang_5);
-            this.groupBox4.Controls.Add(this.textBox_namadepan_5);
-            this.groupBox4.Controls.Add(this.comboBox_titel_5);
-            this.groupBox4.Location = new System.Drawing.Point(13, 265);
-            this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size(475, 43);
-            this.groupBox4.TabIndex = 20;
-            this.groupBox4.TabStop = false;
+            this.groupBox_5.Controls.Add(this.textBox13);
+            this.groupBox_5.Controls.Add(this.textBox_namabelakang_5);
+            this.groupBox_5.Controls.Add(this.textBox_namadepan_5);
+            this.groupBox_5.Controls.Add(this.comboBox_titel_5);
+            this.groupBox_5.Enabled = false;
+            this.groupBox_5.Location = new System.Drawing.Point(13, 265);
+            this.groupBox_5.Name = "groupBox_5";
+            this.groupBox_5.Size = new System.Drawing.Size(475, 43);
+            this.groupBox_5.TabIndex = 20;
+            this.groupBox_5.TabStop = false;
             // 
             // textBox13
             // 
@@ -372,6 +385,8 @@
             // 
             // comboBox_titel_5
             // 
+            this.comboBox_titel_5.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
+            this.comboBox_titel_5.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
             this.comboBox_titel_5.FormattingEnabled = true;
             this.comboBox_titel_5.Items.AddRange(new object[] {
             "Mr.",
@@ -382,17 +397,18 @@
             this.comboBox_titel_5.Size = new System.Drawing.Size(48, 21);
             this.comboBox_titel_5.TabIndex = 4;
             // 
-            // groupBox5
+            // groupBox_6
             // 
-            this.groupBox5.Controls.Add(this.textBox16);
-            this.groupBox5.Controls.Add(this.textBox_namabelakang_6);
-            this.groupBox5.Controls.Add(this.textBox_namadepan_6);
-            this.groupBox5.Controls.Add(this.comboBox_titel_6);
-            this.groupBox5.Location = new System.Drawing.Point(13, 308);
-            this.groupBox5.Name = "groupBox5";
-            this.groupBox5.Size = new System.Drawing.Size(475, 43);
-            this.groupBox5.TabIndex = 21;
-            this.groupBox5.TabStop = false;
+            this.groupBox_6.Controls.Add(this.textBox16);
+            this.groupBox_6.Controls.Add(this.textBox_namabelakang_6);
+            this.groupBox_6.Controls.Add(this.textBox_namadepan_6);
+            this.groupBox_6.Controls.Add(this.comboBox_titel_6);
+            this.groupBox_6.Enabled = false;
+            this.groupBox_6.Location = new System.Drawing.Point(13, 308);
+            this.groupBox_6.Name = "groupBox_6";
+            this.groupBox_6.Size = new System.Drawing.Size(475, 43);
+            this.groupBox_6.TabIndex = 21;
+            this.groupBox_6.TabStop = false;
             // 
             // textBox16
             // 
@@ -421,6 +437,8 @@
             // 
             // comboBox_titel_6
             // 
+            this.comboBox_titel_6.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
+            this.comboBox_titel_6.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
             this.comboBox_titel_6.FormattingEnabled = true;
             this.comboBox_titel_6.Items.AddRange(new object[] {
             "Mr.",
@@ -431,17 +449,18 @@
             this.comboBox_titel_6.Size = new System.Drawing.Size(48, 21);
             this.comboBox_titel_6.TabIndex = 4;
             // 
-            // groupBox6
+            // groupBox_7
             // 
-            this.groupBox6.Controls.Add(this.textBox19);
-            this.groupBox6.Controls.Add(this.textBox_namabelakang_7);
-            this.groupBox6.Controls.Add(this.textBox_namadepan_7);
-            this.groupBox6.Controls.Add(this.comboBox_titel_7);
-            this.groupBox6.Location = new System.Drawing.Point(13, 351);
-            this.groupBox6.Name = "groupBox6";
-            this.groupBox6.Size = new System.Drawing.Size(475, 43);
-            this.groupBox6.TabIndex = 22;
-            this.groupBox6.TabStop = false;
+            this.groupBox_7.Controls.Add(this.textBox19);
+            this.groupBox_7.Controls.Add(this.textBox_namabelakang_7);
+            this.groupBox_7.Controls.Add(this.textBox_namadepan_7);
+            this.groupBox_7.Controls.Add(this.comboBox_titel_7);
+            this.groupBox_7.Enabled = false;
+            this.groupBox_7.Location = new System.Drawing.Point(13, 351);
+            this.groupBox_7.Name = "groupBox_7";
+            this.groupBox_7.Size = new System.Drawing.Size(475, 43);
+            this.groupBox_7.TabIndex = 22;
+            this.groupBox_7.TabStop = false;
             // 
             // textBox19
             // 
@@ -470,6 +489,8 @@
             // 
             // comboBox_titel_7
             // 
+            this.comboBox_titel_7.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
+            this.comboBox_titel_7.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
             this.comboBox_titel_7.FormattingEnabled = true;
             this.comboBox_titel_7.Items.AddRange(new object[] {
             "Mr.",
@@ -480,17 +501,18 @@
             this.comboBox_titel_7.Size = new System.Drawing.Size(48, 21);
             this.comboBox_titel_7.TabIndex = 4;
             // 
-            // groupBox7
+            // groupBox_8
             // 
-            this.groupBox7.Controls.Add(this.textBox22);
-            this.groupBox7.Controls.Add(this.textBox_namabelakang_8);
-            this.groupBox7.Controls.Add(this.textBox_namadepan_8);
-            this.groupBox7.Controls.Add(this.comboBox_titel_8);
-            this.groupBox7.Location = new System.Drawing.Point(13, 394);
-            this.groupBox7.Name = "groupBox7";
-            this.groupBox7.Size = new System.Drawing.Size(475, 43);
-            this.groupBox7.TabIndex = 23;
-            this.groupBox7.TabStop = false;
+            this.groupBox_8.Controls.Add(this.textBox22);
+            this.groupBox_8.Controls.Add(this.textBox_namabelakang_8);
+            this.groupBox_8.Controls.Add(this.textBox_namadepan_8);
+            this.groupBox_8.Controls.Add(this.comboBox_titel_8);
+            this.groupBox_8.Enabled = false;
+            this.groupBox_8.Location = new System.Drawing.Point(13, 394);
+            this.groupBox_8.Name = "groupBox_8";
+            this.groupBox_8.Size = new System.Drawing.Size(475, 43);
+            this.groupBox_8.TabIndex = 23;
+            this.groupBox_8.TabStop = false;
             // 
             // textBox22
             // 
@@ -519,6 +541,8 @@
             // 
             // comboBox_titel_8
             // 
+            this.comboBox_titel_8.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
+            this.comboBox_titel_8.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
             this.comboBox_titel_8.FormattingEnabled = true;
             this.comboBox_titel_8.Items.AddRange(new object[] {
             "Mr.",
@@ -529,17 +553,18 @@
             this.comboBox_titel_8.Size = new System.Drawing.Size(48, 21);
             this.comboBox_titel_8.TabIndex = 4;
             // 
-            // groupBox8
+            // groupBox_9
             // 
-            this.groupBox8.Controls.Add(this.textBox25);
-            this.groupBox8.Controls.Add(this.textBox_namabelakang_9);
-            this.groupBox8.Controls.Add(this.textBox_namadepan_9);
-            this.groupBox8.Controls.Add(this.comboBox_titel_9);
-            this.groupBox8.Location = new System.Drawing.Point(13, 437);
-            this.groupBox8.Name = "groupBox8";
-            this.groupBox8.Size = new System.Drawing.Size(475, 43);
-            this.groupBox8.TabIndex = 24;
-            this.groupBox8.TabStop = false;
+            this.groupBox_9.Controls.Add(this.textBox25);
+            this.groupBox_9.Controls.Add(this.textBox_namabelakang_9);
+            this.groupBox_9.Controls.Add(this.textBox_namadepan_9);
+            this.groupBox_9.Controls.Add(this.comboBox_titel_9);
+            this.groupBox_9.Enabled = false;
+            this.groupBox_9.Location = new System.Drawing.Point(13, 437);
+            this.groupBox_9.Name = "groupBox_9";
+            this.groupBox_9.Size = new System.Drawing.Size(475, 43);
+            this.groupBox_9.TabIndex = 24;
+            this.groupBox_9.TabStop = false;
             // 
             // textBox25
             // 
@@ -568,6 +593,8 @@
             // 
             // comboBox_titel_9
             // 
+            this.comboBox_titel_9.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
+            this.comboBox_titel_9.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
             this.comboBox_titel_9.FormattingEnabled = true;
             this.comboBox_titel_9.Items.AddRange(new object[] {
             "Mr.",
@@ -580,18 +607,19 @@
             // 
             // button_next
             // 
-            this.button_next.Location = new System.Drawing.Point(318, 496);
+            this.button_next.Location = new System.Drawing.Point(384, 496);
             this.button_next.Name = "button_next";
-            this.button_next.Size = new System.Drawing.Size(75, 23);
+            this.button_next.Size = new System.Drawing.Size(104, 23);
             this.button_next.TabIndex = 25;
             this.button_next.Text = "Next";
             this.button_next.UseVisualStyleBackColor = true;
+            this.button_next.Click += new System.EventHandler(this.button_next_Click);
             // 
             // button_cancel
             // 
-            this.button_cancel.Location = new System.Drawing.Point(99, 496);
+            this.button_cancel.Location = new System.Drawing.Point(251, 496);
             this.button_cancel.Name = "button_cancel";
-            this.button_cancel.Size = new System.Drawing.Size(75, 23);
+            this.button_cancel.Size = new System.Drawing.Size(104, 23);
             this.button_cancel.TabIndex = 26;
             this.button_cancel.Text = "Cancel";
             this.button_cancel.UseVisualStyleBackColor = true;
@@ -603,14 +631,14 @@
             this.ClientSize = new System.Drawing.Size(498, 531);
             this.Controls.Add(this.button_cancel);
             this.Controls.Add(this.button_next);
-            this.Controls.Add(this.groupBox8);
-            this.Controls.Add(this.groupBox7);
-            this.Controls.Add(this.groupBox6);
-            this.Controls.Add(this.groupBox5);
-            this.Controls.Add(this.groupBox4);
-            this.Controls.Add(this.groupBox3);
-            this.Controls.Add(this.groupBox2);
-            this.Controls.Add(this.groupBox1);
+            this.Controls.Add(this.groupBox_9);
+            this.Controls.Add(this.groupBox_8);
+            this.Controls.Add(this.groupBox_7);
+            this.Controls.Add(this.groupBox_6);
+            this.Controls.Add(this.groupBox_5);
+            this.Controls.Add(this.groupBox_4);
+            this.Controls.Add(this.groupBox_3);
+            this.Controls.Add(this.groupBox_2);
             this.Controls.Add(this.groupBox_1);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
@@ -621,22 +649,22 @@
             this.Text = "Nama Penumpang";
             this.groupBox_1.ResumeLayout(false);
             this.groupBox_1.PerformLayout();
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
-            this.groupBox2.ResumeLayout(false);
-            this.groupBox2.PerformLayout();
-            this.groupBox3.ResumeLayout(false);
-            this.groupBox3.PerformLayout();
-            this.groupBox4.ResumeLayout(false);
-            this.groupBox4.PerformLayout();
-            this.groupBox5.ResumeLayout(false);
-            this.groupBox5.PerformLayout();
-            this.groupBox6.ResumeLayout(false);
-            this.groupBox6.PerformLayout();
-            this.groupBox7.ResumeLayout(false);
-            this.groupBox7.PerformLayout();
-            this.groupBox8.ResumeLayout(false);
-            this.groupBox8.PerformLayout();
+            this.groupBox_2.ResumeLayout(false);
+            this.groupBox_2.PerformLayout();
+            this.groupBox_3.ResumeLayout(false);
+            this.groupBox_3.PerformLayout();
+            this.groupBox_4.ResumeLayout(false);
+            this.groupBox_4.PerformLayout();
+            this.groupBox_5.ResumeLayout(false);
+            this.groupBox_5.PerformLayout();
+            this.groupBox_6.ResumeLayout(false);
+            this.groupBox_6.PerformLayout();
+            this.groupBox_7.ResumeLayout(false);
+            this.groupBox_7.PerformLayout();
+            this.groupBox_8.ResumeLayout(false);
+            this.groupBox_8.PerformLayout();
+            this.groupBox_9.ResumeLayout(false);
+            this.groupBox_9.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -654,42 +682,42 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.GroupBox groupBox_1;
-        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.GroupBox groupBox_2;
         private System.Windows.Forms.TextBox textBox4;
         private System.Windows.Forms.TextBox textBox_namabelakang_2;
         private System.Windows.Forms.TextBox textBox_namadepan_2;
         private System.Windows.Forms.ComboBox comboBox_titel_2;
-        private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.GroupBox groupBox_3;
         private System.Windows.Forms.TextBox textBox7;
         private System.Windows.Forms.TextBox textBox_namabelakang_3;
         private System.Windows.Forms.TextBox textBox_namadepan_3;
         private System.Windows.Forms.ComboBox comboBox_titel_3;
-        private System.Windows.Forms.GroupBox groupBox3;
+        private System.Windows.Forms.GroupBox groupBox_4;
         private System.Windows.Forms.TextBox textBox10;
         private System.Windows.Forms.TextBox textBox_namabelakang_4;
         private System.Windows.Forms.TextBox textBox_namadepan_4;
         private System.Windows.Forms.ComboBox comboBox_titel_4;
-        private System.Windows.Forms.GroupBox groupBox4;
+        private System.Windows.Forms.GroupBox groupBox_5;
         private System.Windows.Forms.TextBox textBox13;
         private System.Windows.Forms.TextBox textBox_namabelakang_5;
         private System.Windows.Forms.TextBox textBox_namadepan_5;
         private System.Windows.Forms.ComboBox comboBox_titel_5;
-        private System.Windows.Forms.GroupBox groupBox5;
+        private System.Windows.Forms.GroupBox groupBox_6;
         private System.Windows.Forms.TextBox textBox16;
         private System.Windows.Forms.TextBox textBox_namabelakang_6;
         private System.Windows.Forms.TextBox textBox_namadepan_6;
         private System.Windows.Forms.ComboBox comboBox_titel_6;
-        private System.Windows.Forms.GroupBox groupBox6;
+        private System.Windows.Forms.GroupBox groupBox_7;
         private System.Windows.Forms.TextBox textBox19;
         private System.Windows.Forms.TextBox textBox_namabelakang_7;
         private System.Windows.Forms.TextBox textBox_namadepan_7;
         private System.Windows.Forms.ComboBox comboBox_titel_7;
-        private System.Windows.Forms.GroupBox groupBox7;
+        private System.Windows.Forms.GroupBox groupBox_8;
         private System.Windows.Forms.TextBox textBox22;
         private System.Windows.Forms.TextBox textBox_namabelakang_8;
         private System.Windows.Forms.TextBox textBox_namadepan_8;
         private System.Windows.Forms.ComboBox comboBox_titel_8;
-        private System.Windows.Forms.GroupBox groupBox8;
+        private System.Windows.Forms.GroupBox groupBox_9;
         private System.Windows.Forms.TextBox textBox25;
         private System.Windows.Forms.TextBox textBox_namabelakang_9;
         private System.Windows.Forms.TextBox textBox_namadepan_9;

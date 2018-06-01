@@ -30,24 +30,24 @@
         {
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.label_nama = new System.Windows.Forms.Label();
+            this.label_code = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.label_from = new System.Windows.Forms.Label();
+            this.label_dest_from = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.label_to = new System.Windows.Forms.Label();
+            this.label_dest_to = new System.Windows.Forms.Label();
             this.groupBox_pergi = new System.Windows.Forms.GroupBox();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
+            this.label_dest_time = new System.Windows.Forms.Label();
+            this.label_dest_date = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.groupBox_pulang = new System.Windows.Forms.GroupBox();
-            this.label9 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
+            this.label_return_time = new System.Windows.Forms.Label();
+            this.label_return_date = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
-            this.label13 = new System.Windows.Forms.Label();
+            this.label_return_to = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
-            this.label15 = new System.Windows.Forms.Label();
+            this.label_return_from = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
             this.button_close = new System.Windows.Forms.Button();
@@ -74,15 +74,15 @@
             this.label2.TabIndex = 3;
             this.label2.Text = "Booking Code";
             // 
-            // label_nama
+            // label_code
             // 
-            this.label_nama.AutoSize = true;
-            this.label_nama.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label_nama.Location = new System.Drawing.Point(5, 78);
-            this.label_nama.Name = "label_nama";
-            this.label_nama.Size = new System.Drawing.Size(56, 24);
-            this.label_nama.TabIndex = 4;
-            this.label_nama.Text = "Code";
+            this.label_code.AutoSize = true;
+            this.label_code.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_code.Location = new System.Drawing.Point(5, 78);
+            this.label_code.Name = "label_code";
+            this.label_code.Size = new System.Drawing.Size(56, 24);
+            this.label_code.TabIndex = 4;
+            this.label_code.Text = "Code";
             // 
             // label4
             // 
@@ -93,15 +93,15 @@
             this.label4.TabIndex = 5;
             this.label4.Text = "From";
             // 
-            // label_from
+            // label_dest_from
             // 
-            this.label_from.AutoSize = true;
-            this.label_from.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label_from.Location = new System.Drawing.Point(0, 38);
-            this.label_from.Name = "label_from";
-            this.label_from.Size = new System.Drawing.Size(60, 24);
-            this.label_from.TabIndex = 6;
-            this.label_from.Text = "label5";
+            this.label_dest_from.AutoSize = true;
+            this.label_dest_from.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_dest_from.Location = new System.Drawing.Point(0, 38);
+            this.label_dest_from.Name = "label_dest_from";
+            this.label_dest_from.Size = new System.Drawing.Size(60, 24);
+            this.label_dest_from.TabIndex = 6;
+            this.label_dest_from.Text = "label5";
             // 
             // label6
             // 
@@ -112,25 +112,25 @@
             this.label6.TabIndex = 7;
             this.label6.Text = "To";
             // 
-            // label_to
+            // label_dest_to
             // 
-            this.label_to.AutoSize = true;
-            this.label_to.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label_to.Location = new System.Drawing.Point(320, 38);
-            this.label_to.Name = "label_to";
-            this.label_to.Size = new System.Drawing.Size(60, 24);
-            this.label_to.TabIndex = 8;
-            this.label_to.Text = "label7";
+            this.label_dest_to.AutoSize = true;
+            this.label_dest_to.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_dest_to.Location = new System.Drawing.Point(320, 38);
+            this.label_dest_to.Name = "label_dest_to";
+            this.label_dest_to.Size = new System.Drawing.Size(60, 24);
+            this.label_dest_to.TabIndex = 8;
+            this.label_dest_to.Text = "label7";
             // 
             // groupBox_pergi
             // 
-            this.groupBox_pergi.Controls.Add(this.label8);
-            this.groupBox_pergi.Controls.Add(this.label7);
+            this.groupBox_pergi.Controls.Add(this.label_dest_time);
+            this.groupBox_pergi.Controls.Add(this.label_dest_date);
             this.groupBox_pergi.Controls.Add(this.label5);
             this.groupBox_pergi.Controls.Add(this.label3);
-            this.groupBox_pergi.Controls.Add(this.label_to);
+            this.groupBox_pergi.Controls.Add(this.label_dest_to);
             this.groupBox_pergi.Controls.Add(this.label6);
-            this.groupBox_pergi.Controls.Add(this.label_from);
+            this.groupBox_pergi.Controls.Add(this.label_dest_from);
             this.groupBox_pergi.Controls.Add(this.label4);
             this.groupBox_pergi.Location = new System.Drawing.Point(5, 116);
             this.groupBox_pergi.Name = "groupBox_pergi";
@@ -139,25 +139,25 @@
             this.groupBox_pergi.TabStop = false;
             this.groupBox_pergi.Text = "Destination Flight";
             // 
-            // label8
+            // label_dest_time
             // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(320, 90);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(62, 24);
-            this.label8.TabIndex = 12;
-            this.label8.Text = "Waktu";
+            this.label_dest_time.AutoSize = true;
+            this.label_dest_time.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_dest_time.Location = new System.Drawing.Point(320, 90);
+            this.label_dest_time.Name = "label_dest_time";
+            this.label_dest_time.Size = new System.Drawing.Size(62, 24);
+            this.label_dest_time.TabIndex = 12;
+            this.label_dest_time.Text = "Waktu";
             // 
-            // label7
+            // label_dest_date
             // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(0, 90);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(79, 24);
-            this.label7.TabIndex = 11;
-            this.label7.Text = "Tanggal";
+            this.label_dest_date.AutoSize = true;
+            this.label_dest_date.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_dest_date.Location = new System.Drawing.Point(0, 90);
+            this.label_dest_date.Name = "label_dest_date";
+            this.label_dest_date.Size = new System.Drawing.Size(79, 24);
+            this.label_dest_date.TabIndex = 11;
+            this.label_dest_date.Text = "Tanggal";
             // 
             // label5
             // 
@@ -179,13 +179,13 @@
             // 
             // groupBox_pulang
             // 
-            this.groupBox_pulang.Controls.Add(this.label9);
-            this.groupBox_pulang.Controls.Add(this.label10);
+            this.groupBox_pulang.Controls.Add(this.label_return_time);
+            this.groupBox_pulang.Controls.Add(this.label_return_date);
             this.groupBox_pulang.Controls.Add(this.label11);
             this.groupBox_pulang.Controls.Add(this.label12);
-            this.groupBox_pulang.Controls.Add(this.label13);
+            this.groupBox_pulang.Controls.Add(this.label_return_to);
             this.groupBox_pulang.Controls.Add(this.label14);
-            this.groupBox_pulang.Controls.Add(this.label15);
+            this.groupBox_pulang.Controls.Add(this.label_return_from);
             this.groupBox_pulang.Controls.Add(this.label16);
             this.groupBox_pulang.Location = new System.Drawing.Point(5, 258);
             this.groupBox_pulang.Name = "groupBox_pulang";
@@ -194,25 +194,25 @@
             this.groupBox_pulang.TabStop = false;
             this.groupBox_pulang.Text = "Return Flight";
             // 
-            // label9
+            // label_return_time
             // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(320, 90);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(62, 24);
-            this.label9.TabIndex = 12;
-            this.label9.Text = "Waktu";
+            this.label_return_time.AutoSize = true;
+            this.label_return_time.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_return_time.Location = new System.Drawing.Point(320, 90);
+            this.label_return_time.Name = "label_return_time";
+            this.label_return_time.Size = new System.Drawing.Size(62, 24);
+            this.label_return_time.TabIndex = 12;
+            this.label_return_time.Text = "Waktu";
             // 
-            // label10
+            // label_return_date
             // 
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(0, 90);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(79, 24);
-            this.label10.TabIndex = 11;
-            this.label10.Text = "Tanggal";
+            this.label_return_date.AutoSize = true;
+            this.label_return_date.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_return_date.Location = new System.Drawing.Point(0, 90);
+            this.label_return_date.Name = "label_return_date";
+            this.label_return_date.Size = new System.Drawing.Size(79, 24);
+            this.label_return_date.TabIndex = 11;
+            this.label_return_date.Text = "Tanggal";
             // 
             // label11
             // 
@@ -232,15 +232,15 @@
             this.label12.TabIndex = 9;
             this.label12.Text = "Date";
             // 
-            // label13
+            // label_return_to
             // 
-            this.label13.AutoSize = true;
-            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.Location = new System.Drawing.Point(320, 38);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(60, 24);
-            this.label13.TabIndex = 8;
-            this.label13.Text = "label7";
+            this.label_return_to.AutoSize = true;
+            this.label_return_to.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_return_to.Location = new System.Drawing.Point(320, 38);
+            this.label_return_to.Name = "label_return_to";
+            this.label_return_to.Size = new System.Drawing.Size(60, 24);
+            this.label_return_to.TabIndex = 8;
+            this.label_return_to.Text = "label7";
             // 
             // label14
             // 
@@ -251,15 +251,15 @@
             this.label14.TabIndex = 7;
             this.label14.Text = "To";
             // 
-            // label15
+            // label_return_from
             // 
-            this.label15.AutoSize = true;
-            this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label15.Location = new System.Drawing.Point(0, 38);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(60, 24);
-            this.label15.TabIndex = 6;
-            this.label15.Text = "label5";
+            this.label_return_from.AutoSize = true;
+            this.label_return_from.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_return_from.Location = new System.Drawing.Point(0, 38);
+            this.label_return_from.Name = "label_return_from";
+            this.label_return_from.Size = new System.Drawing.Size(60, 24);
+            this.label_return_from.TabIndex = 6;
+            this.label_return_from.Text = "label5";
             // 
             // label16
             // 
@@ -283,12 +283,13 @@
             // 
             // button_close
             // 
-            this.button_close.Location = new System.Drawing.Point(281, 395);
+            this.button_close.Location = new System.Drawing.Point(270, 396);
             this.button_close.Name = "button_close";
-            this.button_close.Size = new System.Drawing.Size(75, 23);
+            this.button_close.Size = new System.Drawing.Size(115, 23);
             this.button_close.TabIndex = 15;
             this.button_close.Text = "Close";
             this.button_close.UseVisualStyleBackColor = true;
+            this.button_close.Click += new System.EventHandler(this.button_close_Click);
             // 
             // PrintTiket
             // 
@@ -299,7 +300,7 @@
             this.Controls.Add(this.label17);
             this.Controls.Add(this.groupBox_pulang);
             this.Controls.Add(this.groupBox_pergi);
-            this.Controls.Add(this.label_nama);
+            this.Controls.Add(this.label_code);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "PrintTiket";
@@ -317,24 +318,24 @@
 
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label_nama;
+        private System.Windows.Forms.Label label_code;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label_from;
+        private System.Windows.Forms.Label label_dest_from;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label_to;
+        private System.Windows.Forms.Label label_dest_to;
         private System.Windows.Forms.GroupBox groupBox_pergi;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label label_dest_time;
+        private System.Windows.Forms.Label label_dest_date;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.GroupBox groupBox_pulang;
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label label_return_time;
+        private System.Windows.Forms.Label label_return_date;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.Label label_return_to;
         private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.Label label_return_from;
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.Button button_close;
