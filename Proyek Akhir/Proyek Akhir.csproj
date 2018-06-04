@@ -40,7 +40,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="mysql.data">
-      <HintPath>..\..\..\drive-download-20180514T075412Z-001\mysql.data.dll</HintPath>
+      <HintPath>C:\Users\Vincent Kurnia\Downloads\Compressed\mysql-connector-net-5.2.7-noinstall-20180514T074417Z-001\mysql-connector-net-5.2.7-noinstall\mysql.data.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -68,11 +68,29 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="ListFlight.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ListFlight.Designer.cs">
+      <DependentUpon>ListFlight.cs</DependentUpon>
+    </Compile>
     <Compile Include="LoginForm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="LoginForm.Designer.cs">
       <DependentUpon>LoginForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NamaPenumpang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NamaPenumpang.Designer.cs">
+      <DependentUpon>NamaPenumpang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PrintTiket.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PrintTiket.Designer.cs">
+      <DependentUpon>PrintTiket.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -88,8 +106,17 @@
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="ListFlight.resx">
+      <DependentUpon>ListFlight.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="LoginForm.resx">
       <DependentUpon>LoginForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NamaPenumpang.resx">
+      <DependentUpon>NamaPenumpang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PrintTiket.resx">
+      <DependentUpon>PrintTiket.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

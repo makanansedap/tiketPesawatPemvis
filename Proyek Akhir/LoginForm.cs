@@ -48,6 +48,9 @@ namespace Proyek_Akhir {
                 Form1.login = true;
                 Form1.nama = nama;
 
+                PrintTiket.nama_depan = nama;
+                PrintTiket.nama_belakang = data_login.GetString(statusIndexNamaBelakang);
+
                 this.Close();
             }
             else {

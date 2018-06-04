@@ -78,6 +78,10 @@ namespace Proyek_Akhir {
             comboBox_ke.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDown;
             comboBox_ke.AutoCompleteMode = AutoCompleteMode.SuggestAppend;
             comboBox_ke.AutoCompleteSource = AutoCompleteSource.ListItems;
+
+            ListFlight.one_way = true;
+            PrintTiket.one_way = true;
+            NamaPenumpang.one_way = true;
         }
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e) {
@@ -161,10 +165,16 @@ namespace Proyek_Akhir {
             if (radioButton_pulang_pergi.Checked) {
                 label_tanggal_pulang.Visible = true;
                 dateTimePicker_pulang.Visible = true;
+                ListFlight.one_way = false;
+                PrintTiket.one_way = false;
+                NamaPenumpang.one_way = false;
             }
             else {
                 label_tanggal_pulang.Visible = false;
                 dateTimePicker_pulang.Visible = false;
+                ListFlight.one_way = true;
+                PrintTiket.one_way = true;
+                NamaPenumpang.one_way = true;
             }
         }
 
@@ -185,6 +195,9 @@ namespace Proyek_Akhir {
             String selected = comboBox_dari.GetItemText(comboBox_dari.SelectedItem);
             comboBox_ke.Items.Remove(selected);
 
+            PrintTiket.dari = comboBox_dari.GetItemText(comboBox_dari.SelectedItem);
+            ListFlight.dari = comboBox_dari.GetItemText(comboBox_dari.SelectedItem);
+            NamaPenumpang.dari = comboBox_dari.GetItemText(comboBox_dari.SelectedItem);
         }
 
         private void comboBox_ke_SelectedIndexChanged(object sender, EventArgs e) {
@@ -199,6 +212,32 @@ namespace Proyek_Akhir {
             reader.Close();
             String selected = comboBox_ke.GetItemText(comboBox_dari.SelectedItem);
             comboBox_dari.Items.Remove(selected);
+
+            PrintTiket.ke = comboBox_ke.GetItemText(comboBox_ke.SelectedItem);
+            ListFlight.ke = comboBox_ke.GetItemText(comboBox_ke.SelectedItem);
+            NamaPenumpang.ke = comboBox_ke.GetItemText(comboBox_ke.SelectedItem);
+        }
+
+        private void button1_Click(object sender, EventArgs e) {
+            if(comboBox_dari.Text == "" || comboBox_ke.Text == "") {
+                MessageBox.Show("Harap mengisi Detail Penerbangan dengan lengkap", "Notice", MessageBoxButtons.OK);
+            }
+            else {
+                PrintTiket.dest_date = dateTimePicker_pergi.Value.ToString("dd MMM yyyy");
+                PrintTiket.return_date = dateTimePicker_pulang.Value.ToString("dd MMM yyyy");
+
+                NamaPenumpang.dest_date = dateTimePicker_pergi.Value.ToString("yyyy-MM-dd");
+                NamaPenumpang.return_date = dateTimePicker_pulang.Value.ToString("yyyy-MM-dd");
+
+                NamaPenumpang.total_penumpang = totalPenumpang;
+
+                ListFlight listflight = new ListFlight();
+                listflight.StartPosition = FormStartPosition.Manual;
+                listflight.Location = new Point(this.Location.X, this.Location.Y);
+                this.Close();
+                listflight.ShowDialog();
+            }
+            
         }
     }
 }
