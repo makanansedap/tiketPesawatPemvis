@@ -23,6 +23,14 @@ namespace Proyek_Akhir {
             button_logout.Visible = status;
             button_login.Visible = !status;
             button_signup.Visible = !status;
+            if(status == true)
+            {
+                label_welcome.Text = "You are logged in as " + nama;
+            }
+            else
+            {
+                label_welcome.Text = "Login or Sign Up to continue";
+            }
         }
 
         private void button1_Click(object sender, EventArgs e) {
@@ -35,7 +43,7 @@ namespace Proyek_Akhir {
         }
 
         private void Form1_Load(object sender, EventArgs e) {
-
+            label_welcome.Text = "Login or Sign Up to continue";
         }
 
         private void button_signup_Click(object sender, EventArgs e) {
@@ -65,10 +73,7 @@ namespace Proyek_Akhir {
 
         private void button_logout_Click(object sender, EventArgs e) {
             DialogResult dr = MessageBox.Show("Are you sure you want to log out?", "Confirmation", MessageBoxButtons.YesNo);
-            if (dr == DialogResult.Yes) {
-                setLogin(false);
-                label_welcome.Text = "Login or Sign Up to continue";
-            }
+            if (dr == DialogResult.Yes) setLogin(false);
         }
     }
 }

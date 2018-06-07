@@ -69,5 +69,17 @@ namespace Proyek_Akhir {
         private void button_cancel_Click(object sender, EventArgs e) {
             this.Close();
         }
+
+        private void textBox_password_KeyDown(object sender, KeyEventArgs e) {
+            if (e.KeyCode == Keys.Enter) button_login.PerformClick();
+        }
+
+        private void textBox_username_KeyDown(object sender, KeyEventArgs e) {
+            if (e.KeyCode == Keys.Enter) button_login.PerformClick();
+        }
+
+        private void LoginForm_KeyDown(object sender, KeyEventArgs e) {
+            if (e.KeyCode == Keys.Enter) button_login.PerformClick();
+        }
     }
 }
