@@ -77,6 +77,3 @@ namespace Proyek_Akhir {
         }
     }
 }
-
-
-//Test GITHUB
