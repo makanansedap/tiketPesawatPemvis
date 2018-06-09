@@ -88,9 +88,9 @@
             this.label_destination.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label_destination.Location = new System.Drawing.Point(6, 27);
             this.label_destination.Name = "label_destination";
-            this.label_destination.Size = new System.Drawing.Size(73, 16);
+            this.label_destination.Size = new System.Drawing.Size(75, 16);
             this.label_destination.TabIndex = 0;
-            this.label_destination.Text = "destination";
+            this.label_destination.Text = "Destination";
             // 
             // groupBox_return
             // 
@@ -117,9 +117,9 @@
             this.label_return.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label_return.Location = new System.Drawing.Point(6, 31);
             this.label_return.Name = "label_return";
-            this.label_return.Size = new System.Drawing.Size(41, 16);
+            this.label_return.Size = new System.Drawing.Size(47, 16);
             this.label_return.TabIndex = 1;
-            this.label_return.Text = "return";
+            this.label_return.Text = "Return";
             // 
             // button_next
             // 
