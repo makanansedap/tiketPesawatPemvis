@@ -8,10 +8,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Proyek_Akhir
-{
-    public partial class PrintTiket : Form
-    {
+namespace Proyek_Akhir {
+    public partial class PrintTiket : Form {
         public static string booking_code = "";
         public static string nama_depan = "";
         public static string nama_belakang = "";
@@ -22,19 +20,16 @@ namespace Proyek_Akhir
 
         public static bool one_way = true;
 
-        public PrintTiket()
-        {
+        public PrintTiket() {
             InitializeComponent();
             Print();
         }
 
-        private void button_close_Click(object sender, EventArgs e)
-        {
+        private void button_close_Click(object sender, EventArgs e) {
             this.Close();
         }
 
-        private void Print()
-        {
+        private void Print() {
             if (one_way == true) groupBox_pulang.Enabled = false;
 
             string temp_dari = substring(dari);
@@ -42,8 +37,7 @@ namespace Proyek_Akhir
 
             label_code.Text = booking_code;
 
-            if(one_way == true)
-            {
+            if (one_way == true) {
                 label_dest_from.Text = temp_dari;
                 label_dest_to.Text = temp_ke;
                 label_dest_date.Text = dest_date;
@@ -54,8 +48,7 @@ namespace Proyek_Akhir
                 label_return_date.Text = "";
                 label_return_time.Text = "";
             }
-            else
-            {
+            else {
                 label_dest_from.Text = temp_dari;
                 label_dest_to.Text = temp_ke;
                 label_dest_date.Text = dest_date;
@@ -68,8 +61,7 @@ namespace Proyek_Akhir
             }
         }
 
-        string substring(string s)
-        {
+        string substring(string s) {
             int startIndex = 0;
             int endIndex = s.IndexOf(",");
 

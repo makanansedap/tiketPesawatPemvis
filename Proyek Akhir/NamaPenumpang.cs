@@ -48,6 +48,10 @@ namespace Proyek_Akhir {
 
         }
 
+        private void button_cancel_Click(object sender, EventArgs e) {
+            this.Close();
+        }
+
         private void button_next_Click(object sender, EventArgs e) {
             input_penumpang();
 
@@ -131,71 +135,75 @@ namespace Proyek_Akhir {
         }
 
         private void enable_input_penumpang() {
-            switch (total_penumpang) {
-                case 1:
-                    groupBox_1.Enabled = true;
-                    break;
-                case 2:
-                    groupBox_1.Enabled = true;
-                    groupBox_2.Enabled = true;
-                    break;
-                case 3:
-                    groupBox_1.Enabled = true;
-                    groupBox_2.Enabled = true;
-                    groupBox_3.Enabled = true;
-                    break;
-                case 4:
-                    groupBox_1.Enabled = true;
-                    groupBox_2.Enabled = true;
-                    groupBox_3.Enabled = true;
-                    groupBox_4.Enabled = true;
-                    break;
-                case 5:
-                    groupBox_1.Enabled = true;
-                    groupBox_2.Enabled = true;
-                    groupBox_3.Enabled = true;
-                    groupBox_4.Enabled = true;
-                    groupBox_5.Enabled = true;
-                    break;
-                case 6:
-                    groupBox_1.Enabled = true;
-                    groupBox_2.Enabled = true;
-                    groupBox_3.Enabled = true;
-                    groupBox_4.Enabled = true;
-                    groupBox_5.Enabled = true;
-                    groupBox_6.Enabled = true;
-                    break;
-                case 7:
-                    groupBox_1.Enabled = true;
-                    groupBox_2.Enabled = true;
-                    groupBox_3.Enabled = true;
-                    groupBox_4.Enabled = true;
-                    groupBox_5.Enabled = true;
-                    groupBox_6.Enabled = true;
-                    groupBox_7.Enabled = true;
-                    break;
-                case 8:
-                    groupBox_1.Enabled = true;
-                    groupBox_2.Enabled = true;
-                    groupBox_3.Enabled = true;
-                    groupBox_4.Enabled = true;
-                    groupBox_5.Enabled = true;
-                    groupBox_6.Enabled = true;
-                    groupBox_7.Enabled = true;
-                    groupBox_8.Enabled = true;
-                    break;
-                case 9:
-                    groupBox_1.Enabled = true;
-                    groupBox_2.Enabled = true;
-                    groupBox_3.Enabled = true;
-                    groupBox_4.Enabled = true;
-                    groupBox_5.Enabled = true;
-                    groupBox_6.Enabled = true;
-                    groupBox_7.Enabled = true;
-                    groupBox_8.Enabled = true;
-                    groupBox_9.Enabled = true;
-                    break;
+            for (int i = 1; i <= total_penumpang; i++) {
+                var groupboxControl = Controls.Find("groupBox_" + i, true).FirstOrDefault() as GroupBox;
+                groupboxControl.Enabled = true;
             }
+            //switch (total_penumpang) {
+            //    case 1:
+            //        groupBox_1.Enabled = true;
+            //        break;
+            //    case 2:
+            //        groupBox_1.Enabled = true;
+            //        groupBox_2.Enabled = true;
+            //        break;
+            //    case 3:
+            //        groupBox_1.Enabled = true;
+            //        groupBox_2.Enabled = true;
+            //        groupBox_3.Enabled = true;
+            //        break;
+            //    case 4:
+            //        groupBox_1.Enabled = true;
+            //        groupBox_2.Enabled = true;
+            //        groupBox_3.Enabled = true;
+            //        groupBox_4.Enabled = true;
+            //        break;
+            //    case 5:
+            //        groupBox_1.Enabled = true;
+            //        groupBox_2.Enabled = true;
+            //        groupBox_3.Enabled = true;
+            //        groupBox_4.Enabled = true;
+            //        groupBox_5.Enabled = true;
+            //        break;
+            //    case 6:
+            //        groupBox_1.Enabled = true;
+            //        groupBox_2.Enabled = true;
+            //        groupBox_3.Enabled = true;
+            //        groupBox_4.Enabled = true;
+            //        groupBox_5.Enabled = true;
+            //        groupBox_6.Enabled = true;
+            //        break;
+            //    case 7:
+            //        groupBox_1.Enabled = true;
+            //        groupBox_2.Enabled = true;
+            //        groupBox_3.Enabled = true;
+            //        groupBox_4.Enabled = true;
+            //        groupBox_5.Enabled = true;
+            //        groupBox_6.Enabled = true;
+            //        groupBox_7.Enabled = true;
+            //        break;
+            //    case 8:
+            //        groupBox_1.Enabled = true;
+            //        groupBox_2.Enabled = true;
+            //        groupBox_3.Enabled = true;
+            //        groupBox_4.Enabled = true;
+            //        groupBox_5.Enabled = true;
+            //        groupBox_6.Enabled = true;
+            //        groupBox_7.Enabled = true;
+            //        groupBox_8.Enabled = true;
+            //        break;
+            //    case 9:
+            //        groupBox_1.Enabled = true;
+            //        groupBox_2.Enabled = true;
+            //        groupBox_3.Enabled = true;
+            //        groupBox_4.Enabled = true;
+            //        groupBox_5.Enabled = true;
+            //        groupBox_6.Enabled = true;
+            //        groupBox_7.Enabled = true;
+            //        groupBox_8.Enabled = true;
+            //        groupBox_9.Enabled = true;
+            //        break;
+            //}
         }
 
         private void input_penumpang() {

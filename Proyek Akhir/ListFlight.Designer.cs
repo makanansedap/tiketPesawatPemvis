@@ -81,6 +81,7 @@
             this.comboBox_dest_time.Name = "comboBox_dest_time";
             this.comboBox_dest_time.Size = new System.Drawing.Size(122, 21);
             this.comboBox_dest_time.TabIndex = 1;
+            this.comboBox_dest_time.SelectedIndexChanged += new System.EventHandler(this.comboBox_dest_time_SelectedIndexChanged);
             // 
             // label_destination
             // 

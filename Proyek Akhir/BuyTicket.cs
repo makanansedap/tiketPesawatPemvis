@@ -228,14 +228,18 @@ namespace Proyek_Akhir {
 
                 NamaPenumpang.dest_date = dateTimePicker_pergi.Value.ToString("yyyy-MM-dd");
                 NamaPenumpang.return_date = dateTimePicker_pulang.Value.ToString("yyyy-MM-dd");
-
                 NamaPenumpang.total_penumpang = totalPenumpang;
+
+                ListFlight.dest_date = dateTimePicker_pergi.Value.ToString("yyyy-MM-dd");
+                ListFlight.return_date = dateTimePicker_pulang.Value.ToString("yyyy-MM-dd");
 
                 ListFlight listflight = new ListFlight();
                 listflight.StartPosition = FormStartPosition.Manual;
                 listflight.Location = new Point(this.Location.X, this.Location.Y);
-                this.Close();
+                this.Visible = false;
+                //this.Close();
                 listflight.ShowDialog();
+                this.Visible = true;
             }
             
         }
