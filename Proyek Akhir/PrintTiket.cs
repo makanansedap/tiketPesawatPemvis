@@ -37,7 +37,7 @@ namespace Proyek_Akhir {
             string temp_ke = substring(ke);
 
             label_code.Text = booking_code;
-            label_price.Text = "Rp." + total_price.ToString("N2");
+            label_price.Text = "Rp. " + total_price.ToString("N2");
 
             if (one_way == true) {
                 label_dest_from.Text = temp_dari;
