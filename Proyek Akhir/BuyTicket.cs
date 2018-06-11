@@ -236,10 +236,10 @@ namespace Proyek_Akhir {
                 ListFlight listflight = new ListFlight();
                 listflight.StartPosition = FormStartPosition.Manual;
                 listflight.Location = new Point(this.Location.X, this.Location.Y);
-                this.Visible = false;
+                //this.Visible = false;
                 //this.Close();
                 listflight.ShowDialog();
-                this.Visible = true;
+                //this.Visible = true;
             }
             
         }

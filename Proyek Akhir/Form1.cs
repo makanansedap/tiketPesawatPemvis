@@ -23,12 +23,10 @@ namespace Proyek_Akhir {
             button_logout.Visible = status;
             button_login.Visible = !status;
             button_signup.Visible = !status;
-            if(status == true)
-            {
+            if (status == true) {
                 label_welcome.Text = "You are logged in as " + nama;
             }
-            else
-            {
+            else {
                 label_welcome.Text = "Login or Sign Up to continue";
             }
         }
