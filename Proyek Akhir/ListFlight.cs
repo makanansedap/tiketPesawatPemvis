@@ -142,6 +142,7 @@ namespace Proyek_Akhir {
                 this.Visible = false;
                 namapenumpang.ShowDialog();
                 this.Visible = true;
+                this.Close();
             }
         }
 

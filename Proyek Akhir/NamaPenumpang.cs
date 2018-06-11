@@ -112,6 +112,7 @@ namespace Proyek_Akhir {
                 printtiket.Location = new Point(this.Location.X, this.Location.Y);
                 this.Close();
                 printtiket.ShowDialog();
+                this.Close();
             }
         }
 
