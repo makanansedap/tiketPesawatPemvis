@@ -15,6 +15,7 @@ namespace Proyek_Akhir {
         public static string dest_date = "", return_date = "";
         public static string dest_time = "", return_time = "";
         public static int total_penumpang;
+        public static int dest_price, return_price;
         public static bool one_way = true;
 
         string curr_bookingcode;
@@ -98,8 +99,9 @@ namespace Proyek_Akhir {
                     string temp_namabelakang = nama_belakang[i];
                     if (one_way == true) {
                         return_date = "1970-01-01";
+                        return_price = 0;
                     }
-                    sqlQuery.CommandText = "INSERT INTO booking_table(booking_code, title, nama_depan, nama_belakang, dest_flight, dest_date, dest_time, return_flight, return_date, return_time) VALUES ('" + curr_bookingcode + "', '" + temp_titel + "', '" + temp_namadepan + "', '" + temp_namabelakang + "', '" + dest_flight + "', '" + dest_date + "', '" + dest_time + "', '" + return_flight + "', '" + return_date + "', '" + return_time + "')";
+                    sqlQuery.CommandText = "INSERT INTO booking_table(booking_code, title, nama_depan, nama_belakang, dest_flight, dest_date, dest_time, dest_price, return_flight, return_date, return_time, return_price) VALUES ('" + curr_bookingcode + "', '" + temp_titel + "', '" + temp_namadepan + "', '" + temp_namabelakang + "', '" + dest_flight + "', '" + dest_date + "', '" + dest_time + "', '"+ dest_price +"', '" + return_flight + "', '" + return_date + "', '" + return_time + "', '"+ return_price +"')";
                     sqlQuery.ExecuteNonQuery();
                 }
 

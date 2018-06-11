@@ -31,9 +31,11 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.groupBox_destination = new System.Windows.Forms.GroupBox();
+            this.label_dest_price = new System.Windows.Forms.Label();
             this.comboBox_dest_time = new System.Windows.Forms.ComboBox();
             this.label_destination = new System.Windows.Forms.Label();
             this.groupBox_return = new System.Windows.Forms.GroupBox();
+            this.label_return_price = new System.Windows.Forms.Label();
             this.comboBox_return_time = new System.Windows.Forms.ComboBox();
             this.label_return = new System.Windows.Forms.Label();
             this.button_next = new System.Windows.Forms.Button();
@@ -65,6 +67,7 @@
             // 
             // groupBox_destination
             // 
+            this.groupBox_destination.Controls.Add(this.label_dest_price);
             this.groupBox_destination.Controls.Add(this.comboBox_dest_time);
             this.groupBox_destination.Controls.Add(this.label_destination);
             this.groupBox_destination.Location = new System.Drawing.Point(27, 76);
@@ -73,6 +76,16 @@
             this.groupBox_destination.TabIndex = 5;
             this.groupBox_destination.TabStop = false;
             this.groupBox_destination.Text = "Destination Flight";
+            // 
+            // label_dest_price
+            // 
+            this.label_dest_price.AutoSize = true;
+            this.label_dest_price.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_dest_price.Location = new System.Drawing.Point(186, 64);
+            this.label_dest_price.Name = "label_dest_price";
+            this.label_dest_price.Size = new System.Drawing.Size(69, 13);
+            this.label_dest_price.TabIndex = 2;
+            this.label_dest_price.Text = "Dest_Price";
             // 
             // comboBox_dest_time
             // 
@@ -95,6 +108,7 @@
             // 
             // groupBox_return
             // 
+            this.groupBox_return.Controls.Add(this.label_return_price);
             this.groupBox_return.Controls.Add(this.comboBox_return_time);
             this.groupBox_return.Controls.Add(this.label_return);
             this.groupBox_return.Location = new System.Drawing.Point(27, 185);
@@ -104,6 +118,16 @@
             this.groupBox_return.TabStop = false;
             this.groupBox_return.Text = "Return Flight";
             // 
+            // label_return_price
+            // 
+            this.label_return_price.AutoSize = true;
+            this.label_return_price.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_return_price.Location = new System.Drawing.Point(186, 71);
+            this.label_return_price.Name = "label_return_price";
+            this.label_return_price.Size = new System.Drawing.Size(74, 13);
+            this.label_return_price.TabIndex = 3;
+            this.label_return_price.Text = "Retrn_Price";
+            // 
             // comboBox_return_time
             // 
             this.comboBox_return_time.FormattingEnabled = true;
@@ -111,6 +135,7 @@
             this.comboBox_return_time.Name = "comboBox_return_time";
             this.comboBox_return_time.Size = new System.Drawing.Size(122, 21);
             this.comboBox_return_time.TabIndex = 2;
+            this.comboBox_return_time.SelectedIndexChanged += new System.EventHandler(this.comboBox_return_time_SelectedIndexChanged);
             // 
             // label_return
             // 
@@ -175,5 +200,7 @@
         private System.Windows.Forms.ComboBox comboBox_return_time;
         private System.Windows.Forms.Button button_next;
         private System.Windows.Forms.Button button_cancel;
+        private System.Windows.Forms.Label label_dest_price;
+        private System.Windows.Forms.Label label_return_price;
     }
 }

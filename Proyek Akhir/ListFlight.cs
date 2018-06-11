@@ -23,6 +23,11 @@ namespace Proyek_Akhir {
 
         int row_FlightList;
 
+        int[] price_dest = new int[6];
+        int[] price_return = new int[6];
+
+        int select_dest_price, select_return_price;
+
         private void connect_mysql() {
             try {
                 connection = "Server=localhost;Database=ta_pemvis;Uid=root;Pwd=;";
@@ -35,6 +40,7 @@ namespace Proyek_Akhir {
         public ListFlight() {
             InitializeComponent();
             ListSelectedFlight();
+            price_generator();
         }
 
         private void ListSelectedFlight() {
@@ -66,8 +72,8 @@ namespace Proyek_Akhir {
                     comboBox_dest_time.Items.Add(string.Format("{0} - {1}", depart, arrival));
                     comboBox_return_time.Items.Add(string.Format("{0} - {1}", depart, arrival));
                 }
-                if(one_way == false && dest_date == return_date) {
-                    comboBox_dest_time.Items.RemoveAt(comboBox_dest_time.Items.Count-1);
+                if (one_way == false && dest_date == return_date) {
+                    comboBox_dest_time.Items.RemoveAt(comboBox_dest_time.Items.Count - 1);
                 }
 
                 sqlReader.Close();
@@ -127,6 +133,8 @@ namespace Proyek_Akhir {
 
                 NamaPenumpang.dest_time = comboBox_dest_time.GetItemText(comboBox_dest_time.SelectedItem);
                 NamaPenumpang.return_time = comboBox_return_time.GetItemText(comboBox_return_time.SelectedItem);
+                NamaPenumpang.dest_price = price_dest[select_dest_price];
+                NamaPenumpang.return_price = price_return[select_return_price];
 
                 NamaPenumpang namapenumpang = new NamaPenumpang();
                 namapenumpang.StartPosition = FormStartPosition.Manual;
@@ -141,6 +149,15 @@ namespace Proyek_Akhir {
             this.Close();
         }
 
+        private void comboBox_return_time_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            select_return_price = comboBox_return_time.SelectedIndex;
+
+            label_return_price.Visible = true;
+
+            label_return_price.Text = "Rp. " + price_return[select_return_price].ToString();
+        }
+
         string substring(string s) {
             int startIndex = 0;
             int endIndex = s.IndexOf(",");
@@ -151,9 +168,11 @@ namespace Proyek_Akhir {
         }
 
         private void comboBox_dest_time_SelectedIndexChanged(object sender, EventArgs e) {
+            select_dest_price = comboBox_dest_time.SelectedIndex;
+
             if (one_way == false && dest_date == return_date) {
                 comboBox_return_time.Items.Clear();
-                sqlQuery.CommandText = String.Format("SELECT DATE_FORMAT(departure, '%H:%i') AS depart, DATE_FORMAT(arrival, '%H:%i') AS arrival FROM time_table WHERE id_time > {0}", comboBox_dest_time.SelectedIndex+1);
+                sqlQuery.CommandText = String.Format("SELECT DATE_FORMAT(departure, '%H:%i') AS depart, DATE_FORMAT(arrival, '%H:%i') AS arrival FROM time_table WHERE id_time > {0}", comboBox_dest_time.SelectedIndex + 1);
                 sqlReader = sqlQuery.ExecuteReader();
                 while (sqlReader.Read()) {
                     String depart = sqlReader.GetString("depart");
@@ -162,6 +181,23 @@ namespace Proyek_Akhir {
                 }
                 sqlReader.Close();
             }
+
+            label_dest_price.Visible = true;
+
+            label_dest_price.Text = "Rp. " + price_dest[select_dest_price].ToString();
+        }
+        
+        private void price_generator() {
+            Random rnd = new Random();
+            
+            for(int n = 0; n < 6; n++)
+            {
+                price_dest[n] = rnd.Next(3000000, 5000000);
+                price_return[n] = rnd.Next(3000000, 5000000);
+            }
+
+            label_dest_price.Visible = false;
+            label_return_price.Visible = false;
         }
     }
 }
