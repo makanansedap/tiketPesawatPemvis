@@ -132,7 +132,6 @@
             this.textBox_namadepan_1.Name = "textBox_namadepan_1";
             this.textBox_namadepan_1.Size = new System.Drawing.Size(162, 20);
             this.textBox_namadepan_1.TabIndex = 6;
-            this.textBox_namadepan_1.TextChanged += new System.EventHandler(this.textBox_namadepan_1_TextChanged);
             // 
             // textBox_namabelakang_1
             // 

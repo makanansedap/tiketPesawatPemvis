@@ -17,6 +17,7 @@ namespace Proyek_Akhir {
         public static string ke = "";
         public static string dest_date = "", return_date = "";
         public static string dest_time = "", return_time = "";
+        public static int total_price = 0;
 
         public static bool one_way = true;
 
@@ -36,6 +37,7 @@ namespace Proyek_Akhir {
             string temp_ke = substring(ke);
 
             label_code.Text = booking_code;
+            label_price.Text = "Rp." + total_price.ToString("N2");
 
             if (one_way == true) {
                 label_dest_from.Text = temp_dari;

@@ -51,6 +51,8 @@
             this.label16 = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
             this.button_close = new System.Windows.Forms.Button();
+            this.label_price = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
             this.groupBox_pergi.SuspendLayout();
             this.groupBox_pulang.SuspendLayout();
             this.SuspendLayout();
@@ -291,11 +293,32 @@
             this.button_close.UseVisualStyleBackColor = true;
             this.button_close.Click += new System.EventHandler(this.button_close_Click);
             // 
+            // label_price
+            // 
+            this.label_price.AutoSize = true;
+            this.label_price.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_price.Location = new System.Drawing.Point(173, 78);
+            this.label_price.Name = "label_price";
+            this.label_price.Size = new System.Drawing.Size(53, 24);
+            this.label_price.TabIndex = 17;
+            this.label_price.Text = "Price";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(173, 63);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(58, 13);
+            this.label8.TabIndex = 16;
+            this.label8.Text = "Total Price";
+            // 
             // PrintTiket
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(666, 430);
+            this.Controls.Add(this.label_price);
+            this.Controls.Add(this.label8);
             this.Controls.Add(this.button_close);
             this.Controls.Add(this.label17);
             this.Controls.Add(this.groupBox_pulang);
@@ -339,5 +362,7 @@
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.Button button_close;
+        private System.Windows.Forms.Label label_price;
+        private System.Windows.Forms.Label label8;
     }
 }

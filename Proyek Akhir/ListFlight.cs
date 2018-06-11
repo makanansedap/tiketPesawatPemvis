@@ -155,7 +155,7 @@ namespace Proyek_Akhir {
 
             label_return_price.Visible = true;
 
-            label_return_price.Text = "Rp. " + price_return[select_return_price].ToString();
+            label_return_price.Text = "Rp." + price_return[select_return_price].ToString("N2") + "/person";
         }
 
         string substring(string s) {
@@ -184,7 +184,7 @@ namespace Proyek_Akhir {
 
             label_dest_price.Visible = true;
 
-            label_dest_price.Text = "Rp. " + price_dest[select_dest_price].ToString();
+            label_dest_price.Text = "Rp." + price_dest[select_dest_price].ToString("N2") + "/person";
         }
         
         private void price_generator() {
@@ -192,8 +192,8 @@ namespace Proyek_Akhir {
             
             for(int n = 0; n < 6; n++)
             {
-                price_dest[n] = rnd.Next(3000000, 5000000);
-                price_return[n] = rnd.Next(3000000, 5000000);
+                price_dest[n] = rnd.Next(300, 500)*10000;
+                price_return[n] = rnd.Next(300, 500)*10000;
             }
 
             label_dest_price.Visible = false;

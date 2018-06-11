@@ -15,7 +15,7 @@ namespace Proyek_Akhir {
         public static string dest_date = "", return_date = "";
         public static string dest_time = "", return_time = "";
         public static int total_penumpang;
-        public static int dest_price, return_price;
+        public static int dest_price = 0, return_price = 0;
         public static bool one_way = true;
 
         string curr_bookingcode;
@@ -43,10 +43,6 @@ namespace Proyek_Akhir {
             InitializeComponent();
             enable_input_penumpang();
             count_booking();
-        }
-
-        private void textBox_namadepan_1_TextChanged(object sender, EventArgs e) {
-
         }
 
         private void button_cancel_Click(object sender, EventArgs e) {
@@ -105,14 +101,13 @@ namespace Proyek_Akhir {
                     sqlQuery.ExecuteNonQuery();
                 }
 
+                PrintTiket.total_price = (dest_price + return_price) * total_penumpang;
                 PrintTiket.booking_code = curr_bookingcode;
 
                 PrintTiket printtiket = new PrintTiket();
                 printtiket.StartPosition = FormStartPosition.Manual;
                 printtiket.Location = new Point(this.Location.X, this.Location.Y);
-                this.Close();
                 printtiket.ShowDialog();
-                this.Close();
             }
         }
 
@@ -142,71 +137,6 @@ namespace Proyek_Akhir {
                 var groupboxControl = Controls.Find("groupBox_" + i, true).FirstOrDefault() as GroupBox;
                 groupboxControl.Enabled = true;
             }
-            //switch (total_penumpang) {
-            //    case 1:
-            //        groupBox_1.Enabled = true;
-            //        break;
-            //    case 2:
-            //        groupBox_1.Enabled = true;
-            //        groupBox_2.Enabled = true;
-            //        break;
-            //    case 3:
-            //        groupBox_1.Enabled = true;
-            //        groupBox_2.Enabled = true;
-            //        groupBox_3.Enabled = true;
-            //        break;
-            //    case 4:
-            //        groupBox_1.Enabled = true;
-            //        groupBox_2.Enabled = true;
-            //        groupBox_3.Enabled = true;
-            //        groupBox_4.Enabled = true;
-            //        break;
-            //    case 5:
-            //        groupBox_1.Enabled = true;
-            //        groupBox_2.Enabled = true;
-            //        groupBox_3.Enabled = true;
-            //        groupBox_4.Enabled = true;
-            //        groupBox_5.Enabled = true;
-            //        break;
-            //    case 6:
-            //        groupBox_1.Enabled = true;
-            //        groupBox_2.Enabled = true;
-            //        groupBox_3.Enabled = true;
-            //        groupBox_4.Enabled = true;
-            //        groupBox_5.Enabled = true;
-            //        groupBox_6.Enabled = true;
-            //        break;
-            //    case 7:
-            //        groupBox_1.Enabled = true;
-            //        groupBox_2.Enabled = true;
-            //        groupBox_3.Enabled = true;
-            //        groupBox_4.Enabled = true;
-            //        groupBox_5.Enabled = true;
-            //        groupBox_6.Enabled = true;
-            //        groupBox_7.Enabled = true;
-            //        break;
-            //    case 8:
-            //        groupBox_1.Enabled = true;
-            //        groupBox_2.Enabled = true;
-            //        groupBox_3.Enabled = true;
-            //        groupBox_4.Enabled = true;
-            //        groupBox_5.Enabled = true;
-            //        groupBox_6.Enabled = true;
-            //        groupBox_7.Enabled = true;
-            //        groupBox_8.Enabled = true;
-            //        break;
-            //    case 9:
-            //        groupBox_1.Enabled = true;
-            //        groupBox_2.Enabled = true;
-            //        groupBox_3.Enabled = true;
-            //        groupBox_4.Enabled = true;
-            //        groupBox_5.Enabled = true;
-            //        groupBox_6.Enabled = true;
-            //        groupBox_7.Enabled = true;
-            //        groupBox_8.Enabled = true;
-            //        groupBox_9.Enabled = true;
-            //        break;
-            //}
         }
 
         private void input_penumpang() {
