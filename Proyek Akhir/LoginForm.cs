@@ -48,8 +48,15 @@ namespace Proyek_Akhir {
                 Form1.login = true;
                 Form1.nama = nama;
 
-                PrintTiket.nama_depan = nama;
+                PrintTiket.nama_depan = data_login.GetString(statusIndexNamaDepan);
                 PrintTiket.nama_belakang = data_login.GetString(statusIndexNamaBelakang);
+
+                int statusIndexEmail = data_login.GetOrdinal("email");
+                int statusIndexNoHp = data_login.GetOrdinal("no_hp");
+
+                NamaPenumpang.cp_name = data_login.GetString(statusIndexNamaDepan) + " " + data_login.GetString(statusIndexNamaBelakang);
+                NamaPenumpang.email = data_login.GetString(statusIndexEmail);
+                NamaPenumpang.no_hp = data_login.GetString(statusIndexNoHp);
 
                 this.Close();
             }
