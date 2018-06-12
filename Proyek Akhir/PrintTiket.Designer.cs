@@ -53,6 +53,7 @@
             this.button_close = new System.Windows.Forms.Button();
             this.label_price = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
+            this.button_exportPdf = new System.Windows.Forms.Button();
             this.groupBox_pergi.SuspendLayout();
             this.groupBox_pulang.SuspendLayout();
             this.SuspendLayout();
@@ -285,7 +286,7 @@
             // 
             // button_close
             // 
-            this.button_close.Location = new System.Drawing.Point(270, 396);
+            this.button_close.Location = new System.Drawing.Point(202, 395);
             this.button_close.Name = "button_close";
             this.button_close.Size = new System.Drawing.Size(115, 23);
             this.button_close.TabIndex = 15;
@@ -312,11 +313,22 @@
             this.label8.TabIndex = 16;
             this.label8.Text = "Total Price";
             // 
+            // button_exportPdf
+            // 
+            this.button_exportPdf.Location = new System.Drawing.Point(329, 395);
+            this.button_exportPdf.Name = "button_exportPdf";
+            this.button_exportPdf.Size = new System.Drawing.Size(115, 23);
+            this.button_exportPdf.TabIndex = 18;
+            this.button_exportPdf.Text = "Export to PDF";
+            this.button_exportPdf.UseVisualStyleBackColor = true;
+            this.button_exportPdf.Click += new System.EventHandler(this.button_exportPdf_Click);
+            // 
             // PrintTiket
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(666, 430);
+            this.Controls.Add(this.button_exportPdf);
             this.Controls.Add(this.label_price);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.button_close);
@@ -364,5 +376,6 @@
         private System.Windows.Forms.Button button_close;
         private System.Windows.Forms.Label label_price;
         private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Button button_exportPdf;
     }
 }

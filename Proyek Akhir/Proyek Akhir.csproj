@@ -42,6 +42,9 @@
     <Reference Include="mysql.data">
       <HintPath>C:\Users\Vincent Kurnia\Downloads\Compressed\mysql-connector-net-5.2.7-noinstall-20180514T074417Z-001\mysql-connector-net-5.2.7-noinstall\mysql.data.dll</HintPath>
     </Reference>
+    <Reference Include="PdfSharp">
+      <HintPath>..\..\PDFsharp-master\PDFsharp-master\src\PdfSharp\bin\Debug\PdfSharp.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.DirectoryServices" />

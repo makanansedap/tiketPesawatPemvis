@@ -52,7 +52,7 @@ namespace Proyek_Akhir {
 
         private void button_next_Click(object sender, EventArgs e) {
             input_penumpang();
-
+        
             for (int i = 0; i < total_penumpang; i++) {
                 if (nama_depan[i] == "" || nama_belakang[i] == "") {
                     error_nama = true;
@@ -73,42 +73,45 @@ namespace Proyek_Akhir {
                 error_titel = false;
             }
             else {
-                string dest_flight = "", return_flight = "";
+                DialogResult result = MessageBox.Show("Apakah informasi yang anda input sudah benar?", "Confirmation", MessageBoxButtons.YesNo);
+                if (result == DialogResult.Yes) {
+                    string dest_flight = "", return_flight = "";
 
-                connect_mysql();
-                sqlQuery = connect.CreateCommand();
+                    connect_mysql();
+                    sqlQuery = connect.CreateCommand();
 
-                if (one_way == true) {
-                    dest_flight = dari + " - " + ke;
-
-                    return_flight = "";
-                    return_date = "";
-                    return_time = "";
-                }
-                else {
-                    dest_flight = dari + " - " + ke;
-                    return_flight = ke + " - " + dari;
-                }
-
-                for (int i = 0; i < total_penumpang; i++) {
-                    string temp_titel = titel[i];
-                    string temp_namadepan = nama_depan[i];
-                    string temp_namabelakang = nama_belakang[i];
                     if (one_way == true) {
-                        return_date = "1970-01-01";
-                        return_price = 0;
+                        dest_flight = dari + " - " + ke;
+
+                        return_flight = "";
+                        return_date = "";
+                        return_time = "";
                     }
-                    sqlQuery.CommandText = "INSERT INTO booking_table(booking_code, title, nama_depan, nama_belakang, dest_flight, dest_date, dest_time, dest_price, return_flight, return_date, return_time, return_price, cp_name, email, no_hp) VALUES ('" + curr_bookingcode + "', '" + temp_titel + "', '" + temp_namadepan + "', '" + temp_namabelakang + "', '" + dest_flight + "', '" + dest_date + "', '" + dest_time + "', '"+ dest_price +"', '" + return_flight + "', '" + return_date + "', '" + return_time + "', '"+ return_price +"', '"+ cp_name +"', '"+ email +"', '"+ no_hp +"')";
-                    sqlQuery.ExecuteNonQuery();
+                    else {
+                        dest_flight = dari + " - " + ke;
+                        return_flight = ke + " - " + dari;
+                    }
+
+                    for (int i = 0; i < total_penumpang; i++) {
+                        string temp_titel = titel[i];
+                        string temp_namadepan = nama_depan[i];
+                        string temp_namabelakang = nama_belakang[i];
+                        if (one_way == true) {
+                            return_date = "1970-01-01";
+                            return_price = 0;
+                        }
+                        sqlQuery.CommandText = "INSERT INTO booking_table(booking_code, title, nama_depan, nama_belakang, dest_flight, dest_date, dest_time, dest_price, return_flight, return_date, return_time, return_price, cp_name, email, no_hp) VALUES ('" + curr_bookingcode + "', '" + temp_titel + "', '" + temp_namadepan + "', '" + temp_namabelakang + "', '" + dest_flight + "', '" + dest_date + "', '" + dest_time + "', '" + dest_price + "', '" + return_flight + "', '" + return_date + "', '" + return_time + "', '" + return_price + "', '" + cp_name + "', '" + email + "', '" + no_hp + "')";
+                        sqlQuery.ExecuteNonQuery();
+                    }
+
+                    PrintTiket.total_price = (dest_price + return_price) * total_penumpang;
+                    PrintTiket.booking_code = curr_bookingcode;
+
+                    PrintTiket printtiket = new PrintTiket();
+                    printtiket.StartPosition = FormStartPosition.Manual;
+                    printtiket.Location = new Point(this.Location.X, this.Location.Y);
+                    printtiket.ShowDialog();
                 }
-
-                PrintTiket.total_price = (dest_price + return_price) * total_penumpang;
-                PrintTiket.booking_code = curr_bookingcode;
-
-                PrintTiket printtiket = new PrintTiket();
-                printtiket.StartPosition = FormStartPosition.Manual;
-                printtiket.Location = new Point(this.Location.X, this.Location.Y);
-                printtiket.ShowDialog();
             }
         }
 

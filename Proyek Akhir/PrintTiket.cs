@@ -7,6 +7,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using PdfSharp;
+using PdfSharp.Drawing;
+using PdfSharp.Pdf;
 
 namespace Proyek_Akhir {
     public partial class PrintTiket : Form {
@@ -28,6 +31,16 @@ namespace Proyek_Akhir {
 
         private void button_close_Click(object sender, EventArgs e) {
             this.Close();
+        }
+
+        private void button_exportPdf_Click(object sender, EventArgs e) {
+            PdfDocument pdf = new PdfDocument();
+            PdfPage pdfPage = pdf.AddPage();
+            XGraphics graph = XGraphics.FromPdfPage(pdfPage);
+            XFont font = new XFont("Verdana", 20, XFontStyle.Bold);
+            graph.DrawString("This is my first pdf", font, XBrushes.Black,
+                new XRect(0, 0, pdfPage.Width.Point, pdfPage.Height.Point), XStringFormats.TopLeft);
+            pdf.Save("firstpage.pdf");
         }
 
         private void Print() {
