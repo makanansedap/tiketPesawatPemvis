@@ -340,6 +340,7 @@
             this.Controls.Add(this.label1);
             this.Name = "PrintTiket";
             this.Text = "PrintTiket";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.closeAllWindow);
             this.groupBox_pergi.ResumeLayout(false);
             this.groupBox_pergi.PerformLayout();
             this.groupBox_pulang.ResumeLayout(false);

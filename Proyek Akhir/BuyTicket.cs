@@ -226,6 +226,8 @@ namespace Proyek_Akhir {
                 PrintTiket.dest_date = dateTimePicker_pergi.Value.ToString("dd MMM yyyy");
                 PrintTiket.return_date = dateTimePicker_pulang.Value.ToString("dd MMM yyyy");
 
+                PrintTiket.total_penumpang = totalPenumpang;
+
                 NamaPenumpang.dest_date = dateTimePicker_pergi.Value.ToString("yyyy-MM-dd");
                 NamaPenumpang.return_date = dateTimePicker_pulang.Value.ToString("yyyy-MM-dd");
                 NamaPenumpang.total_penumpang = totalPenumpang;

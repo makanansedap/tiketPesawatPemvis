@@ -160,7 +160,7 @@ namespace Proyek_Akhir {
                 nama_depan[2] = textBox_namadepan_3.Text;
                 nama_belakang[2] = textBox_namabelakang_3.Text;
 
-                titel[2] = comboBox_titel_4.GetItemText(comboBox_titel_4.SelectedItem);
+                titel[2] = comboBox_titel_3.GetItemText(comboBox_titel_3.SelectedItem);
             }
             if (groupBox_4.Enabled == true) {
                 nama_depan[3] = textBox_namadepan_4.Text;
