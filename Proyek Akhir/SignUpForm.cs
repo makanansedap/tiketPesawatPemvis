@@ -61,7 +61,7 @@ namespace Proyek_Akhir {
                             string temp_username = textBox_username.Text;
                             string temp_email = textBox_email.Text;
 
-                            //Cek username
+                            //Cek username existing
                             {
                                 sqlQuery = connect.CreateCommand();
                                 sqlQuery.CommandText = "SELECT COUNT(*) AS count_username FROM user_table WHERE username = '" + temp_username + "'";
@@ -74,7 +74,7 @@ namespace Proyek_Akhir {
                                 sqlReader.Close();
                             }
 
-                            //Cek email
+                            //Cek email existing
                             {
                                 sqlQuery = connect.CreateCommand();
                                 sqlQuery.CommandText = "SELECT COUNT(*) AS count_email FROM user_table WHERE email = '" + temp_email + "'";
