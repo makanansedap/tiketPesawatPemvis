@@ -51,7 +51,12 @@ namespace Proyek_Akhir {
         }
 
         private void button_close_Click(object sender, EventArgs e) {
+            BuyTicket beliTiket = new BuyTicket();
+            beliTiket.StartPosition = FormStartPosition.Manual;
+            beliTiket.Location = new Point(this.Location.X, this.Location.Y);
+            this.Visible = false;
             this.Close();
+            beliTiket.ShowDialog();
         }
 
         private void button_exportPdf_Click(object sender, EventArgs e) {
