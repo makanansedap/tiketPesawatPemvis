@@ -88,5 +88,9 @@ namespace Proyek_Akhir {
         private void LoginForm_KeyDown(object sender, KeyEventArgs e) {
             if (e.KeyCode == Keys.Enter) button_login.PerformClick();
         }
+
+        private void textBox_username_TextChanged(object sender, EventArgs e) {
+
+        }
     }
 }

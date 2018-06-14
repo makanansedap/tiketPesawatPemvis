@@ -61,17 +61,15 @@ namespace Proyek_Akhir {
             loginForm.ShowDialog();
             label_welcome.Text = "You are logged in as " + nama;
             setLogin(login);
-            /*BuyTicket beliTiket = new BuyTicket();
-            beliTiket.StartPosition = FormStartPosition.Manual;
-            beliTiket.Location = new Point(this.Location.X, this.Location.Y);
-            this.Visible = false;
-            beliTiket.ShowDialog();
-            this.Visible = true;*/
         }
 
         private void button_logout_Click(object sender, EventArgs e) {
             DialogResult dr = MessageBox.Show("Are you sure you want to log out?", "Confirmation", MessageBoxButtons.YesNo);
             if (dr == DialogResult.Yes) setLogin(false);
+        }
+
+        private void exitToolStripMenuItem_Click(object sender, EventArgs e) {
+            Environment.Exit(0);
         }
     }
 }

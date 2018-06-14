@@ -60,7 +60,7 @@ namespace Proyek_Akhir {
             reader = da.ExecuteReader();
 
             PdfDocument pdf = new PdfDocument();
-
+            
             while (reader.Read()) {
                 string nama = reader.GetString("title") + " " +  reader.GetString("nama_depan") + " " + reader.GetString("nama_belakang");
                 string dest_flight = reader.GetString("dest_flight");
@@ -89,6 +89,8 @@ namespace Proyek_Akhir {
                     "\n    • Price     : " + "Rp." + return_price.ToString("N2");
 
                 PdfPage pdfPage = pdf.AddPage();
+                pdfPage.Size = PageSize.A5;
+                pdfPage.Orientation = PageOrientation.Landscape;
                 XGraphics graph = XGraphics.FromPdfPage(pdfPage);
                 XFont fontHeading1 = new XFont("Arial", 20, XFontStyle.Bold);
                 XFont fontHeading2 = new XFont("Arial", 16, XFontStyle.Bold);
@@ -108,10 +110,7 @@ namespace Proyek_Akhir {
         }
 
         private void closeAllWindow(object sender, FormClosingEventArgs e) {
-            //Environment.Exit(0);
-            //foreach (Form f in Application.OpenForms) {
-            //    f.Close();
-            //}
+
         }
 
         private void Print() {
