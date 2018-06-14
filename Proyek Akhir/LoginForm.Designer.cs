@@ -80,6 +80,7 @@
             this.textBox_username.Name = "textBox_username";
             this.textBox_username.Size = new System.Drawing.Size(220, 20);
             this.textBox_username.TabIndex = 10;
+            this.textBox_username.TextChanged += new System.EventHandler(this.textBox_username_TextChanged);
             this.textBox_username.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textBox_username_KeyDown);
             // 
             // button_login

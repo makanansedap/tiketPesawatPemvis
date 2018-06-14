@@ -78,20 +78,6 @@ namespace Proyek_Akhir {
 
                 sqlReader.Close();
 
-                /*MySqlDataAdapter adapter = new MySqlDataAdapter("SELECT d.city AS 'Depart', a.city AS 'Arrival' , t.departure AS 'Depart Time', t.arrival AS 'Arrival Time' FROM airport_table AS d, airport_table AS a, time_table AS t WHERE d.city = 'Goroka' AND a.city = 'Madang'", connect);
-                DataSet ds = new DataSet();
-                adapter.Fill(ds);
-                dataGridView_Flight.DataSource = ds.Tables[0];
-                connect.Close();
-
-                DataGridViewButtonColumn btn = new DataGridViewButtonColumn();
-                dataGridView_Flight.Columns.Add(btn);
-                btn.HeaderText = "Selection";
-                btn.Text = "Select Here";
-                btn.Name = "btn";
-                btn.UseColumnTextForButtonValue = true;
-
-                dataGridView_Flight.CellClick += new DataGridViewCellEventHandler(dataGridView_Flight_CellClick);*/
             }
             catch (Exception exc) {
                 MessageBox.Show(exc.Message);
@@ -107,17 +93,7 @@ namespace Proyek_Akhir {
         }
 
         private void dataGridView_Flight_CellClick(object sender, DataGridViewCellEventArgs e) {
-            /*if (dataGridView_Flight.CurrentCell != null && dataGridView_Flight.CurrentCell.Value != null)
-            {
-                row_FlightList = dataGridView_Flight.CurrentCell.RowIndex;
-                //MessageBox.Show(dataGridView_Flight.CurrentCell.RowIndex.ToString());
-            }
 
-            PrintTiket printtiket = new PrintTiket();
-            printtiket.StartPosition = FormStartPosition.Manual;
-            printtiket.Location = new Point(this.Location.X, this.Location.Y);
-            this.Close();
-            printtiket.ShowDialog();*/
         }
 
         private void button_next_Click(object sender, EventArgs e) {
