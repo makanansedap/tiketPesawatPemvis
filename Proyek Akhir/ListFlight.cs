@@ -139,9 +139,10 @@ namespace Proyek_Akhir {
                 NamaPenumpang namapenumpang = new NamaPenumpang();
                 namapenumpang.StartPosition = FormStartPosition.Manual;
                 namapenumpang.Location = new Point(this.Location.X, this.Location.Y);
-                //this.Visible = false;
+                this.Visible = false;
+                this.Close();
                 namapenumpang.ShowDialog();
-                this.Visible = true;
+                //this.Visible = true;
             }
         }
 

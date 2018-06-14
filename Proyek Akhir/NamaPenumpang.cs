@@ -110,7 +110,10 @@ namespace Proyek_Akhir {
                     PrintTiket printtiket = new PrintTiket();
                     printtiket.StartPosition = FormStartPosition.Manual;
                     printtiket.Location = new Point(this.Location.X, this.Location.Y);
+                    this.Visible = false;
+                    this.Close();
                     printtiket.ShowDialog();
+                    //this.Visible = true;
                 }
             }
         }
@@ -132,8 +135,6 @@ namespace Proyek_Akhir {
             counter++;
 
             curr_bookingcode = "TKG" + counter.ToString();
-
-            //MessageBox.Show(String.Format("Booking code : {0}", curr_bookingcode));
         }
 
         private void enable_input_penumpang() {
