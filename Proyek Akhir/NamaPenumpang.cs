@@ -24,8 +24,9 @@ namespace Proyek_Akhir {
         string[] titel = new string[9];
         string[] nama_depan = new string[9];
         string[] nama_belakang = new string[9];
+        string[] identitas = new string[9];
 
-        bool error_nama = false, error_titel = false;
+        bool error_nama = false, error_titel = false, error_id = false;
 
         private String connection;
         MySqlConnection connect;
@@ -62,6 +63,9 @@ namespace Proyek_Akhir {
                     error_titel = true;
                     break;
                 }
+                if (identitas[i] == "") {
+                    error_id = true;
+                }
             }
 
             if (error_nama == true) {
@@ -70,6 +74,10 @@ namespace Proyek_Akhir {
             }
             else if (error_titel == true) {
                 MessageBox.Show("Titel tidak boleh kosong", "Warning", MessageBoxButtons.OK);
+                error_titel = false;
+            }
+            else if (error_id == true) {
+                MessageBox.Show("Nomor Identitas tidak boleh kosong", "Warning", MessageBoxButtons.OK);
                 error_titel = false;
             }
             else {
@@ -96,11 +104,12 @@ namespace Proyek_Akhir {
                         string temp_titel = titel[i];
                         string temp_namadepan = nama_depan[i];
                         string temp_namabelakang = nama_belakang[i];
+                        string temp_id = identitas[i];
                         if (one_way == true) {
                             return_date = "1970-01-01";
                             return_price = 0;
                         }
-                        sqlQuery.CommandText = "INSERT INTO booking_table(booking_code, title, nama_depan, nama_belakang, dest_flight, dest_date, dest_time, dest_price, return_flight, return_date, return_time, return_price, cp_name, email, no_hp) VALUES ('" + curr_bookingcode + "', '" + temp_titel + "', '" + temp_namadepan + "', '" + temp_namabelakang + "', '" + dest_flight + "', '" + dest_date + "', '" + dest_time + "', '" + dest_price + "', '" + return_flight + "', '" + return_date + "', '" + return_time + "', '" + return_price + "', '" + cp_name + "', '" + email + "', '" + no_hp + "')";
+                        sqlQuery.CommandText = "INSERT INTO booking_table(booking_code, title, nama_depan, nama_belakang, no_identitas, dest_flight, dest_date, dest_time, dest_price, return_flight, return_date, return_time, return_price, cp_name, email, no_hp) VALUES ('" + curr_bookingcode + "', '" + temp_titel + "', '" + temp_namadepan + "', '" + temp_namabelakang + "', '" + temp_id + "', '" + dest_flight + "', '" + dest_date + "', '" + dest_time + "', '" + dest_price + "', '" + return_flight + "', '" + return_date + "', '" + return_time + "', '" + return_price + "', '" + cp_name + "', '" + email + "', '" + no_hp + "')";
                         sqlQuery.ExecuteNonQuery();
                     }
 
@@ -148,54 +157,63 @@ namespace Proyek_Akhir {
             if (groupBox_1.Enabled == true) {
                 nama_depan[0] = textBox_namadepan_1.Text;
                 nama_belakang[0] = textBox_namabelakang_1.Text;
+                identitas[0] = textBox_identitas_1.Text;
 
                 titel[0] = comboBox_titel_1.GetItemText(comboBox_titel_1.SelectedItem);
             }
             if (groupBox_2.Enabled == true) {
                 nama_depan[1] = textBox_namadepan_2.Text;
                 nama_belakang[1] = textBox_namabelakang_2.Text;
+                identitas[1] = textBox_identitas_2.Text;
 
                 titel[1] = comboBox_titel_2.GetItemText(comboBox_titel_2.SelectedItem);
             }
             if (groupBox_3.Enabled == true) {
                 nama_depan[2] = textBox_namadepan_3.Text;
                 nama_belakang[2] = textBox_namabelakang_3.Text;
+                identitas[2] = textBox_identitas_3.Text;
 
                 titel[2] = comboBox_titel_3.GetItemText(comboBox_titel_3.SelectedItem);
             }
             if (groupBox_4.Enabled == true) {
                 nama_depan[3] = textBox_namadepan_4.Text;
                 nama_belakang[3] = textBox_namabelakang_4.Text;
+                identitas[3] = textBox_identitas_4.Text;
 
                 titel[3] = comboBox_titel_4.GetItemText(comboBox_titel_4.SelectedItem);
             }
             if (groupBox_5.Enabled == true) {
                 nama_depan[4] = textBox_namadepan_5.Text;
                 nama_belakang[4] = textBox_namabelakang_5.Text;
+                identitas[4] = textBox_identitas_5.Text;
 
                 titel[4] = comboBox_titel_5.GetItemText(comboBox_titel_5.SelectedItem);
             }
             if (groupBox_6.Enabled == true) {
                 nama_depan[5] = textBox_namadepan_6.Text;
                 nama_belakang[5] = textBox_namabelakang_6.Text;
+                identitas[5] = textBox_identitas_6.Text;
 
                 titel[5] = comboBox_titel_6.GetItemText(comboBox_titel_6.SelectedItem);
             }
             if (groupBox_7.Enabled == true) {
                 nama_depan[6] = textBox_namadepan_7.Text;
                 nama_belakang[6] = textBox_namabelakang_7.Text;
+                identitas[6] = textBox_identitas_7.Text;
 
                 titel[6] = comboBox_titel_7.GetItemText(comboBox_titel_7.SelectedItem);
             }
             if (groupBox_8.Enabled == true) {
                 nama_depan[7] = textBox_namadepan_8.Text;
                 nama_belakang[7] = textBox_namabelakang_8.Text;
+                identitas[7] = textBox_identitas_8.Text;
 
                 titel[7] = comboBox_titel_8.GetItemText(comboBox_titel_8.SelectedItem);
             }
             if (groupBox_9.Enabled == true) {
                 nama_depan[8] = textBox_namadepan_9.Text;
                 nama_belakang[8] = textBox_namabelakang_9.Text;
+                identitas[8] = textBox_identitas_9.Text;
 
                 titel[8] = comboBox_titel_9.GetItemText(comboBox_titel_9.SelectedItem);
             }

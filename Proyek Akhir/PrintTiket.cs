@@ -34,7 +34,7 @@ namespace Proyek_Akhir {
         private void connect_mysql() {
             try {
                 conn = "Server = localhost; Database= ta_pemvis; uid = root; pwd=;";
-                String query = "SELECT title, nama_depan, nama_belakang, dest_flight, dest_date, dest_time, dest_price, return_flight, return_date, return_time, return_price FROM booking_table WHERE booking_code = '" + booking_code + "'";
+                String query = "SELECT title, nama_depan, nama_belakang, no_identitas, dest_flight, dest_date, dest_time, dest_price, return_flight, return_date, return_time, return_price FROM booking_table WHERE booking_code = '" + booking_code + "'";
                 connection = new MySqlConnection(conn);
                 da = new MySqlCommand(query, connection);
                 connection.Open();
@@ -68,6 +68,7 @@ namespace Proyek_Akhir {
             
             while (reader.Read()) {
                 string nama = reader.GetString("title") + " " +  reader.GetString("nama_depan") + " " + reader.GetString("nama_belakang");
+                string identitas = reader.GetString("no_identitas");
                 string dest_flight = reader.GetString("dest_flight");
                 string dest_date = reader.GetString("dest_date");
                 string dest_time = reader.GetString("dest_time");
@@ -80,6 +81,7 @@ namespace Proyek_Akhir {
                 string content =
                     "\n\n\n\n\nBooking Reference    : " + booking_code +
                     "\nPassenger Name       : " + nama +
+                    "\nIdentity Number      : " + identitas +
                     "\nDestination Details  : " +
                     "\n    • Flight    : " + dest_flight +
                     "\n    • Date      : " + dest_date +
