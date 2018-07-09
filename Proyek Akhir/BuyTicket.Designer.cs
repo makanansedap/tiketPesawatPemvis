@@ -358,6 +358,7 @@
             this.Controls.Add(this.groupBox2_detailPenumpang);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.groupBox_detailPenerbangan);
+            this.MaximizeBox = false;
             this.Name = "BuyTicket";
             this.Text = "Buy Ticket";
             this.Load += new System.EventHandler(this.BuyTicket_Load);

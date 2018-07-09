@@ -78,7 +78,7 @@ namespace Proyek_Akhir {
             comboBox_ke.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDown;
             comboBox_ke.AutoCompleteMode = AutoCompleteMode.SuggestAppend;
             comboBox_ke.AutoCompleteSource = AutoCompleteSource.ListItems;
-
+            
             ListFlight.one_way = true;
             PrintTiket.one_way = true;
             NamaPenumpang.one_way = true;

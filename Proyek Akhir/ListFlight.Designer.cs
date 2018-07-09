@@ -89,6 +89,7 @@
             // 
             // comboBox_dest_time
             // 
+            this.comboBox_dest_time.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox_dest_time.FormattingEnabled = true;
             this.comboBox_dest_time.Location = new System.Drawing.Point(9, 61);
             this.comboBox_dest_time.Name = "comboBox_dest_time";
@@ -130,6 +131,7 @@
             // 
             // comboBox_return_time
             // 
+            this.comboBox_return_time.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox_return_time.FormattingEnabled = true;
             this.comboBox_return_time.Location = new System.Drawing.Point(9, 68);
             this.comboBox_return_time.Name = "comboBox_return_time";
@@ -178,6 +180,7 @@
             this.Controls.Add(this.groupBox_destination);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
+            this.MaximizeBox = false;
             this.Name = "ListFlight";
             this.Text = "ListFlight";
             this.groupBox_destination.ResumeLayout(false);

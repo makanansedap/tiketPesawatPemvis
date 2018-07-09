@@ -82,7 +82,7 @@ namespace Proyek_Akhir {
             catch (Exception exc) {
                 MessageBox.Show(exc.Message);
             }
-
+            
             comboBox_dest_time.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDown;
             comboBox_dest_time.AutoCompleteMode = AutoCompleteMode.SuggestAppend;
             comboBox_dest_time.AutoCompleteSource = AutoCompleteSource.ListItems;
