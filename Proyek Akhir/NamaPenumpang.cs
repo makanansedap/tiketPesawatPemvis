@@ -78,7 +78,7 @@ namespace Proyek_Akhir {
             }
             else if (error_id == true) {
                 MessageBox.Show("Nomor Identitas tidak boleh kosong", "Warning", MessageBoxButtons.OK);
-                error_titel = false;
+                error_id = false;
             }
             else {
                 DialogResult result = MessageBox.Show("Apakah informasi yang anda input sudah benar?", "Confirmation", MessageBoxButtons.YesNo);
