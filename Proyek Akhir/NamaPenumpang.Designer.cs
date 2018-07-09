@@ -81,6 +81,16 @@
             this.button_next = new System.Windows.Forms.Button();
             this.button_cancel = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label6 = new System.Windows.Forms.Label();
+            this.textBox_identitas_1 = new System.Windows.Forms.TextBox();
+            this.textBox_identitas_2 = new System.Windows.Forms.TextBox();
+            this.textBox_identitas_3 = new System.Windows.Forms.TextBox();
+            this.textBox_identitas_4 = new System.Windows.Forms.TextBox();
+            this.textBox_identitas_5 = new System.Windows.Forms.TextBox();
+            this.textBox_identitas_6 = new System.Windows.Forms.TextBox();
+            this.textBox_identitas_7 = new System.Windows.Forms.TextBox();
+            this.textBox_identitas_8 = new System.Windows.Forms.TextBox();
+            this.textBox_identitas_9 = new System.Windows.Forms.TextBox();
             this.groupBox_1.SuspendLayout();
             this.groupBox_2.SuspendLayout();
             this.groupBox_3.SuspendLayout();
@@ -97,7 +107,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Palatino Linotype", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(74, 13);
+            this.label1.Location = new System.Drawing.Point(175, 19);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(335, 38);
             this.label1.TabIndex = 3;
@@ -180,6 +190,7 @@
             // 
             // groupBox_1
             // 
+            this.groupBox_1.Controls.Add(this.textBox_identitas_1);
             this.groupBox_1.Controls.Add(this.textBox3);
             this.groupBox_1.Controls.Add(this.textBox_namabelakang_1);
             this.groupBox_1.Controls.Add(this.textBox_namadepan_1);
@@ -187,12 +198,13 @@
             this.groupBox_1.Enabled = false;
             this.groupBox_1.Location = new System.Drawing.Point(3, 3);
             this.groupBox_1.Name = "groupBox_1";
-            this.groupBox_1.Size = new System.Drawing.Size(475, 43);
+            this.groupBox_1.Size = new System.Drawing.Size(638, 43);
             this.groupBox_1.TabIndex = 16;
             this.groupBox_1.TabStop = false;
             // 
             // groupBox_2
             // 
+            this.groupBox_2.Controls.Add(this.textBox_identitas_2);
             this.groupBox_2.Controls.Add(this.textBox4);
             this.groupBox_2.Controls.Add(this.textBox_namabelakang_2);
             this.groupBox_2.Controls.Add(this.textBox_namadepan_2);
@@ -200,7 +212,7 @@
             this.groupBox_2.Enabled = false;
             this.groupBox_2.Location = new System.Drawing.Point(3, 46);
             this.groupBox_2.Name = "groupBox_2";
-            this.groupBox_2.Size = new System.Drawing.Size(475, 43);
+            this.groupBox_2.Size = new System.Drawing.Size(638, 43);
             this.groupBox_2.TabIndex = 17;
             this.groupBox_2.TabStop = false;
             // 
@@ -245,6 +257,7 @@
             // 
             // groupBox_3
             // 
+            this.groupBox_3.Controls.Add(this.textBox_identitas_3);
             this.groupBox_3.Controls.Add(this.textBox7);
             this.groupBox_3.Controls.Add(this.textBox_namabelakang_3);
             this.groupBox_3.Controls.Add(this.textBox_namadepan_3);
@@ -252,7 +265,7 @@
             this.groupBox_3.Enabled = false;
             this.groupBox_3.Location = new System.Drawing.Point(3, 89);
             this.groupBox_3.Name = "groupBox_3";
-            this.groupBox_3.Size = new System.Drawing.Size(475, 43);
+            this.groupBox_3.Size = new System.Drawing.Size(638, 43);
             this.groupBox_3.TabIndex = 18;
             this.groupBox_3.TabStop = false;
             // 
@@ -297,6 +310,7 @@
             // 
             // groupBox_4
             // 
+            this.groupBox_4.Controls.Add(this.textBox_identitas_4);
             this.groupBox_4.Controls.Add(this.textBox10);
             this.groupBox_4.Controls.Add(this.textBox_namabelakang_4);
             this.groupBox_4.Controls.Add(this.textBox_namadepan_4);
@@ -304,7 +318,7 @@
             this.groupBox_4.Enabled = false;
             this.groupBox_4.Location = new System.Drawing.Point(3, 132);
             this.groupBox_4.Name = "groupBox_4";
-            this.groupBox_4.Size = new System.Drawing.Size(475, 43);
+            this.groupBox_4.Size = new System.Drawing.Size(638, 43);
             this.groupBox_4.TabIndex = 19;
             this.groupBox_4.TabStop = false;
             // 
@@ -349,6 +363,7 @@
             // 
             // groupBox_5
             // 
+            this.groupBox_5.Controls.Add(this.textBox_identitas_5);
             this.groupBox_5.Controls.Add(this.textBox13);
             this.groupBox_5.Controls.Add(this.textBox_namabelakang_5);
             this.groupBox_5.Controls.Add(this.textBox_namadepan_5);
@@ -356,7 +371,7 @@
             this.groupBox_5.Enabled = false;
             this.groupBox_5.Location = new System.Drawing.Point(3, 175);
             this.groupBox_5.Name = "groupBox_5";
-            this.groupBox_5.Size = new System.Drawing.Size(475, 43);
+            this.groupBox_5.Size = new System.Drawing.Size(638, 43);
             this.groupBox_5.TabIndex = 20;
             this.groupBox_5.TabStop = false;
             // 
@@ -401,6 +416,7 @@
             // 
             // groupBox_6
             // 
+            this.groupBox_6.Controls.Add(this.textBox_identitas_6);
             this.groupBox_6.Controls.Add(this.textBox16);
             this.groupBox_6.Controls.Add(this.textBox_namabelakang_6);
             this.groupBox_6.Controls.Add(this.textBox_namadepan_6);
@@ -408,7 +424,7 @@
             this.groupBox_6.Enabled = false;
             this.groupBox_6.Location = new System.Drawing.Point(3, 218);
             this.groupBox_6.Name = "groupBox_6";
-            this.groupBox_6.Size = new System.Drawing.Size(475, 43);
+            this.groupBox_6.Size = new System.Drawing.Size(638, 43);
             this.groupBox_6.TabIndex = 21;
             this.groupBox_6.TabStop = false;
             // 
@@ -453,6 +469,7 @@
             // 
             // groupBox_7
             // 
+            this.groupBox_7.Controls.Add(this.textBox_identitas_7);
             this.groupBox_7.Controls.Add(this.textBox19);
             this.groupBox_7.Controls.Add(this.textBox_namabelakang_7);
             this.groupBox_7.Controls.Add(this.textBox_namadepan_7);
@@ -460,7 +477,7 @@
             this.groupBox_7.Enabled = false;
             this.groupBox_7.Location = new System.Drawing.Point(3, 261);
             this.groupBox_7.Name = "groupBox_7";
-            this.groupBox_7.Size = new System.Drawing.Size(475, 43);
+            this.groupBox_7.Size = new System.Drawing.Size(638, 43);
             this.groupBox_7.TabIndex = 22;
             this.groupBox_7.TabStop = false;
             // 
@@ -505,6 +522,7 @@
             // 
             // groupBox_8
             // 
+            this.groupBox_8.Controls.Add(this.textBox_identitas_8);
             this.groupBox_8.Controls.Add(this.textBox22);
             this.groupBox_8.Controls.Add(this.textBox_namabelakang_8);
             this.groupBox_8.Controls.Add(this.textBox_namadepan_8);
@@ -512,7 +530,7 @@
             this.groupBox_8.Enabled = false;
             this.groupBox_8.Location = new System.Drawing.Point(3, 304);
             this.groupBox_8.Name = "groupBox_8";
-            this.groupBox_8.Size = new System.Drawing.Size(475, 43);
+            this.groupBox_8.Size = new System.Drawing.Size(638, 43);
             this.groupBox_8.TabIndex = 23;
             this.groupBox_8.TabStop = false;
             // 
@@ -557,6 +575,7 @@
             // 
             // groupBox_9
             // 
+            this.groupBox_9.Controls.Add(this.textBox_identitas_9);
             this.groupBox_9.Controls.Add(this.textBox25);
             this.groupBox_9.Controls.Add(this.textBox_namabelakang_9);
             this.groupBox_9.Controls.Add(this.textBox_namadepan_9);
@@ -564,7 +583,7 @@
             this.groupBox_9.Enabled = false;
             this.groupBox_9.Location = new System.Drawing.Point(3, 347);
             this.groupBox_9.Name = "groupBox_9";
-            this.groupBox_9.Size = new System.Drawing.Size(475, 43);
+            this.groupBox_9.Size = new System.Drawing.Size(638, 43);
             this.groupBox_9.TabIndex = 24;
             this.groupBox_9.TabStop = false;
             // 
@@ -609,7 +628,7 @@
             // 
             // button_next
             // 
-            this.button_next.Location = new System.Drawing.Point(384, 496);
+            this.button_next.Location = new System.Drawing.Point(543, 496);
             this.button_next.Name = "button_next";
             this.button_next.Size = new System.Drawing.Size(104, 23);
             this.button_next.TabIndex = 25;
@@ -619,7 +638,7 @@
             // 
             // button_cancel
             // 
-            this.button_cancel.Location = new System.Drawing.Point(251, 496);
+            this.button_cancel.Location = new System.Drawing.Point(423, 496);
             this.button_cancel.Name = "button_cancel";
             this.button_cancel.Size = new System.Drawing.Size(104, 23);
             this.button_cancel.TabIndex = 26;
@@ -640,14 +659,87 @@
             this.panel1.Controls.Add(this.groupBox_6);
             this.panel1.Location = new System.Drawing.Point(12, 95);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(484, 395);
+            this.panel1.Size = new System.Drawing.Size(647, 395);
             this.panel1.TabIndex = 27;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(533, 78);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(67, 13);
+            this.label6.TabIndex = 28;
+            this.label6.Text = "No. Identitas";
+            // 
+            // textBox_identitas_1
+            // 
+            this.textBox_identitas_1.Location = new System.Drawing.Point(471, 12);
+            this.textBox_identitas_1.Name = "textBox_identitas_1";
+            this.textBox_identitas_1.Size = new System.Drawing.Size(162, 20);
+            this.textBox_identitas_1.TabIndex = 29;
+            // 
+            // textBox_identitas_2
+            // 
+            this.textBox_identitas_2.Location = new System.Drawing.Point(471, 12);
+            this.textBox_identitas_2.Name = "textBox_identitas_2";
+            this.textBox_identitas_2.Size = new System.Drawing.Size(162, 20);
+            this.textBox_identitas_2.TabIndex = 12;
+            // 
+            // textBox_identitas_3
+            // 
+            this.textBox_identitas_3.Location = new System.Drawing.Point(471, 12);
+            this.textBox_identitas_3.Name = "textBox_identitas_3";
+            this.textBox_identitas_3.Size = new System.Drawing.Size(162, 20);
+            this.textBox_identitas_3.TabIndex = 13;
+            // 
+            // textBox_identitas_4
+            // 
+            this.textBox_identitas_4.Location = new System.Drawing.Point(471, 12);
+            this.textBox_identitas_4.Name = "textBox_identitas_4";
+            this.textBox_identitas_4.Size = new System.Drawing.Size(162, 20);
+            this.textBox_identitas_4.TabIndex = 14;
+            // 
+            // textBox_identitas_5
+            // 
+            this.textBox_identitas_5.Location = new System.Drawing.Point(471, 12);
+            this.textBox_identitas_5.Name = "textBox_identitas_5";
+            this.textBox_identitas_5.Size = new System.Drawing.Size(162, 20);
+            this.textBox_identitas_5.TabIndex = 15;
+            // 
+            // textBox_identitas_6
+            // 
+            this.textBox_identitas_6.Location = new System.Drawing.Point(471, 12);
+            this.textBox_identitas_6.Name = "textBox_identitas_6";
+            this.textBox_identitas_6.Size = new System.Drawing.Size(162, 20);
+            this.textBox_identitas_6.TabIndex = 16;
+            // 
+            // textBox_identitas_7
+            // 
+            this.textBox_identitas_7.Location = new System.Drawing.Point(471, 12);
+            this.textBox_identitas_7.Name = "textBox_identitas_7";
+            this.textBox_identitas_7.Size = new System.Drawing.Size(162, 20);
+            this.textBox_identitas_7.TabIndex = 17;
+            // 
+            // textBox_identitas_8
+            // 
+            this.textBox_identitas_8.Location = new System.Drawing.Point(471, 12);
+            this.textBox_identitas_8.Name = "textBox_identitas_8";
+            this.textBox_identitas_8.Size = new System.Drawing.Size(162, 20);
+            this.textBox_identitas_8.TabIndex = 18;
+            // 
+            // textBox_identitas_9
+            // 
+            this.textBox_identitas_9.Location = new System.Drawing.Point(471, 12);
+            this.textBox_identitas_9.Name = "textBox_identitas_9";
+            this.textBox_identitas_9.Size = new System.Drawing.Size(162, 20);
+            this.textBox_identitas_9.TabIndex = 19;
             // 
             // NamaPenumpang
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(506, 531);
+            this.ClientSize = new System.Drawing.Size(667, 531);
+            this.Controls.Add(this.label6);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.button_cancel);
             this.Controls.Add(this.button_next);
@@ -738,5 +830,15 @@
         private System.Windows.Forms.Button button_next;
         private System.Windows.Forms.Button button_cancel;
         private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.TextBox textBox_identitas_1;
+        private System.Windows.Forms.TextBox textBox_identitas_2;
+        private System.Windows.Forms.TextBox textBox_identitas_3;
+        private System.Windows.Forms.TextBox textBox_identitas_4;
+        private System.Windows.Forms.TextBox textBox_identitas_5;
+        private System.Windows.Forms.TextBox textBox_identitas_6;
+        private System.Windows.Forms.TextBox textBox_identitas_7;
+        private System.Windows.Forms.TextBox textBox_identitas_8;
+        private System.Windows.Forms.TextBox textBox_identitas_9;
     }
 }

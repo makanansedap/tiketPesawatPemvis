@@ -71,6 +71,10 @@ namespace Proyek_Akhir {
         private void exitToolStripMenuItem_Click(object sender, EventArgs e) {
             Environment.Exit(0);
         }
+
+        private void label1_Click(object sender, EventArgs e) {
+
+        }
     }
 }
 
